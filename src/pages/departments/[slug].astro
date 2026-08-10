@@ -1,0 +1,90 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import departments from '../../data/departments.json';
+import site from '../../data/site.json';
+
+export async function getStaticPaths() {
+  return departments.map((dept: any) => ({
+    params: { slug: dept.slug },
+    props: { dept },
+  }));
+}
+
+const { dept } = Astro.props as { dept: any };
+---
+
+<Layout title={`${dept.name} | Dashvanth Healthcare`} description={dept.about}>
+  <section class="dept-hero">
+    <div class="container">
+      <div class="dept-hero-ico">{dept.icon}</div>
+      <h1>{dept.name}</h1>
+      <p class="sub">{dept.tagline}</p>
+      <div class="consultant-pill">👨‍⚕️ {dept.consultantLine}</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:820px;">
+      <p style="color:var(--gray);font-size:15.5px;line-height:1.8;">{dept.about}</p>
+    </div>
+  </section>
+
+  <section class="why-section" style="padding-top:0;">
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">Conditions We Treat</div>
+        <h2>Conditions We Treat</h2>
+      </div>
+      <div class="cond-grid">
+        {dept.conditions.map((c: string) => <div class="cond-card">{c}</div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="proc-section">
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">Procedures & Treatments</div>
+        <h2>Procedures & Treatments</h2>
+      </div>
+      <div class="proc-grid">
+        {dept.procedures.map((p: string) => <div class="proc-card">{p}</div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-sec">
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        {dept.faqs.map((f: any) => (
+          <details class="fi">
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {dept.blogCategorySlug && (
+    <section style="padding-top:0;">
+      <div class="container" style="text-align:center;">
+        <a class="btn-ghost" style="color:var(--teal);border-color:var(--teal);background:transparent;" href={`/blog/${dept.blogCategorySlug}/`}>📄 Read {dept.shortName} Articles →</a>
+      </div>
+    </section>
+  )}
+
+  <section class="cta-band" style="padding:44px 0;">
+    <div class="container cta-band-inner">
+      <h2>Book a Consultation with {dept.shortName}</h2>
+      <div class="hero-btns" style="justify-content:center;">
+        <a class="btn-main" href={`tel:${site.phone}`} style="background:#fff;color:var(--teal);box-shadow:none;">📞 Call {site.phoneDisplay}</a>
+        <a class="btn-ghost" href="/contact/">Book Online →</a>
+      </div>
+    </div>
+  </section>
+</Layout>

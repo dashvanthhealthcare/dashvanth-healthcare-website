@@ -1,0 +1,23 @@
+{
+  "eyebrow": "About Us",
+  "heading": "About Dashvanth Healthcare",
+  "sub": "East Delhi's trusted multispeciality healthcare centre — expert care, honest pricing, zero wait for emergencies",
+  "story": [
+    "Dashvanth Healthcare was founded with a singular mission: to bring multispeciality hospital-quality care to the doorstep of East Delhi families — without the intimidating environment, long waiting times, or hidden charges of large hospitals.",
+    "Located in Krishna Nagar Extension, we serve families from across East Delhi — Vivek Vihar, Shahdara, Preet Vihar, Mayur Vihar, Krishna Nagar, and beyond. Our centre combines expert consultants, an in-house diagnostics lab, 24×7 pharmacy, and digital X-ray & ultrasound under one roof."
+  ],
+  "values": [
+    { "icon": "🎯", "title": "Accuracy", "text": "Evidence-based medicine, no unnecessary tests" },
+    { "icon": "💯", "title": "Transparency", "text": "Fixed pricing, no hidden charges" },
+    { "icon": "⏱️", "title": "Speed", "text": "6-hour lab reports, same-day imaging" },
+    { "icon": "❤️", "title": "Compassion", "text": "Patient-first approach, always" }
+  ],
+  "facilities": [
+    "🦴 Orthopaedics & Joint Replacement OPD",
+    "🧠 Neurosurgery & Spine OPD",
+    "👶 Paediatrics & Child Health OPD",
+    "🔬 In-house Diagnostics Laboratory",
+    "📡 Digital X-Ray & Ultrasound",
+    "💊 24×7 Pharmacy"
+  ]
+}

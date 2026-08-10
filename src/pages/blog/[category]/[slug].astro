@@ -1,0 +1,79 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import blogCategories from '../../../data/blog-categories.json';
+import blogArticles from '../../../data/blog-articles.json';
+import site from '../../../data/site.json';
+
+export async function getStaticPaths() {
+  return blogArticles.map((article: any) => ({
+    params: { category: article.category, slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props as { article: any };
+const cat = blogCategories.find((c: any) => c.slug === article.category);
+const related = blogArticles.filter((a: any) => a.category === article.category && a.slug !== article.slug);
+---
+
+<Layout title={`${article.title} | Dashvanth Healthcare Blog`} description={`${article.title} — reviewed by ${article.reviewedBy}. Expert health guidance from Dashvanth Healthcare, East Delhi.`}>
+  <section>
+    <div class="container article-wrap">
+      <a class="back-link" href={`/blog/${article.category}/`}>← Back to {cat?.name}</a>
+      <article>
+        <div class="article-meta">{cat?.icon} {cat?.name} · Reviewed by {article.reviewedBy}</div>
+        <h1>{article.title}</h1>
+        <div class="article-body">
+          {article.blocks.map((b: any) => {
+            if (b.type === 'h2') return <h2>{b.text}</h2>;
+            if (b.type === 'h3') return <h3>{b.text}</h3>;
+            if (b.type === 'p') return <p>{b.text}</p>;
+            if (b.type === 'ul') return (
+              <ul>
+                {b.items.map((i: string) => <li>{i}</li>)}
+              </ul>
+            );
+            if (b.type === 'table') return (
+              <table>
+                <thead>
+                  <tr>{b.headers.map((h: string) => <th>{h}</th>)}</tr>
+                </thead>
+                <tbody>
+                  {b.rows.map((row: string[]) => (
+                    <tr>{row.map((cell: string) => <td>{cell}</td>)}</tr>
+                  ))}
+                </tbody>
+              </table>
+            );
+            return null;
+          })}
+
+          {article.faqs && article.faqs.length > 0 && (
+            <>
+              <h2>FAQ</h2>
+              {article.faqs.map((f: any) => (
+                <p><strong>{f.q}</strong> {f.a}</p>
+              ))}
+            </>
+          )}
+        </div>
+
+        {related.length > 0 && (
+          <div class="related-box">
+            <strong>More {cat?.name} articles:</strong>{' '}
+            {related.map((r: any, idx: number) => (
+              <>
+                <a href={`/blog/${article.category}/${r.slug}/`}>{r.title}</a>
+                {idx < related.length - 1 ? ' · ' : ''}
+              </>
+            ))}
+          </div>
+        )}
+
+        <div style="text-align:center;margin-top:34px;">
+          <a class="btn-main" href="/contact/">📅 Book a Consultation →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Layout>

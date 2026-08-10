@@ -1,0 +1,166 @@
+[
+  {
+    "slug": "dr-shahrukh-khan",
+    "isPlaceholder": false,
+    "name": "Dr. Shahrukh Khan",
+    "department": "Orthopaedics & Joint Replacement",
+    "departmentSlug": "orthopaedics",
+    "rating": "4.9",
+    "photoNote": "Photo placeholder — upload via CMS to public/images/uploads/",
+    "credentials": "MBBS, MS Ortho, DNB Ortho, MNAMS, FIJR, FIASM, DIP FIFA Sports Medicine",
+    "tags": ["Orthopaedics & Joint Replacement", "Arthroscopy", "Sports Medicine", "10+ yrs Experience", "FIFA Sports Medicine"],
+    "availability": "Mon–Sat: 10 AM – 2 PM & 5 PM – 8 PM",
+    "availabilityShort": "Mon–Sat 10AM-2PM & 5PM-8PM",
+    "quickStats": [
+      { "value": "10+", "label": "Years Experience" },
+      { "value": "7", "label": "Publications" },
+      { "value": "21+", "label": "Workshops" }
+    ],
+    "about": [
+      "Dr. Shahrukh Khan is a co-director and senior orthopaedic consultant at Dashvanth Healthcare, and Consultant Orthopaedic Surgeon at Sanjeevan Hospital, Daryaganj and Apollo Spectra, Karol Bagh (since May 2025). He completed his MBBS and MS (Orthopaedics) from Maulana Azad Medical College (MAMC) & Lok Nayak Hospital, New Delhi — one of India's most prestigious medical institutions — followed by DNB (Orthopaedic Surgery) from the National Board of Examinations.",
+      "He further specialised with a Senior Residency in Sports Medicine at the Sports Injury Centre, Safdarjung Hospital & VMMC (the premier government sports injury centre in India), and completed a Fellowship in Arthroscopy & Arthroplasty at Max Hospital, Mohali. He also holds a Diploma in FIFA Sports Medicine, making him one of the very few orthopaedic surgeons in East Delhi with international-level sports medicine credentials.",
+      "Dr. Shahrukh has 7 peer-reviewed publications in indexed international journals including the Indian Journal of Orthopaedics, JBJS Essential Surgical Techniques, Journal of Orthopaedic Science, and Annals of the National Academy of Medical Sciences. He has won multiple academic awards including the Silver Medal at E-DOACON 2020 and presented at the SICOT World Congress, Egypt (2023). He has attended 21+ orthopaedic workshops and trained at AIIMS, MAMC, and premier orthopaedic institutions across India."
+    ],
+    "qualifications": [
+      { "degree": "MBBS", "institute": "Maulana Azad Medical College (MAMC), New Delhi", "years": "2010–2015" },
+      { "degree": "Internship", "institute": "MAMC & Lok Nayak Hospital, New Delhi", "years": "2016" },
+      { "degree": "MS Orthopaedic Surgery", "institute": "MAMC & Lok Nayak Hospital, New Delhi", "years": "2018–2021" },
+      { "degree": "DNB Orthopaedic Surgery", "institute": "National Board of Examinations, India", "years": "Passed March 2022" },
+      { "degree": "MNAMS", "institute": "Member, National Academy of Medical Sciences, India", "years": "" },
+      { "degree": "Fellowship in Arthroscopy & Arthroplasty", "institute": "Max Hospital, Mohali (Max Healthcare)", "years": "September 2024" },
+      { "degree": "FIJR", "institute": "Fellowship in Joint Replacement", "years": "" },
+      { "degree": "FIASM", "institute": "Fellowship in Arthroscopy & Sports Medicine", "years": "" },
+      { "degree": "DIP FIFA Sports Medicine", "institute": "Fédération Internationale de Football Association", "years": "" }
+    ],
+    "careerTimeline": [
+      { "period": "May 2025 – Present", "role": "Consultant Orthopaedic Surgeon", "place": "Sanjeevan Hospital, Daryaganj, New Delhi (SMRC)" },
+      { "period": "May 2025 – Present", "role": "Consultant Orthopaedic Surgeon", "place": "Apollo Spectra, Karol Bagh, New Delhi (Apollo)" },
+      { "period": "Oct 2024 – May 2025", "role": "Attending Consultant, Orthopaedics", "place": "Max Hospital, Gurugram (Max Healthcare)" },
+      { "period": "Sep 2024", "role": "Fellowship in Arthroscopy & Arthroplasty", "place": "Max Hospital, Mohali, Chandigarh (Max Healthcare)" },
+      { "period": "Mar 2024 – Sep 2024", "role": "Assistant Professor, Orthopaedics", "place": "Hamdard Institute of Medical Sciences & Research (HAHC Hospital), Jamia Hamdard, New Delhi" },
+      { "period": "Oct 2023 – Mar 2024", "role": "Senior Resident (Sports Medicine)", "place": "Sports Injury Centre, Safdarjung Hospital & VMMC, New Delhi" },
+      { "period": "Aug 2021 – Oct 2023", "role": "Senior Resident, Orthopaedics", "place": "Department of Orthopaedics, Lok Nayak Hospital (MAMC), New Delhi" },
+      { "period": "May 2018 – Jul 2021", "role": "MS Orthopaedics Resident", "place": "MAMC & Lok Nayak Hospital, New Delhi" }
+    ],
+    "expertise": ["Total Knee Replacement (TKA)", "Total Hip Replacement (THA)", "Arthroscopic ACL Reconstruction", "Shoulder Arthroscopy & Rotator Cuff Repair", "Fracture Management (ORIF)", "Sports Injuries & Ligament Repair", "PRP Therapy for Joints", "Paediatric Orthopaedics", "Spine Disorders (Conservative)", "Ilizarov & Complex Reconstruction"],
+    "achievements": [
+      { "icon": "🥈", "title": "Silver Medal — Paper Presentation", "detail": "E-DOACON 2020" },
+      { "icon": "🏆", "title": "1st Prize — Endoscopic Surgery Competition", "detail": "MAMC Advanced Surgical Skills Course 2019" },
+      { "icon": "🎖️", "title": "3rd Prize — Poster Competition", "detail": "MIDCON 2020" },
+      { "icon": "📚", "title": "7 Peer-Reviewed Publications", "detail": "Indian Journal of Orthopaedics, JBJS Essential Surgical Techniques & more" },
+      { "icon": "🌍", "title": "International Presenter", "detail": "SICOT World Congress 2023, Cairo, Egypt" },
+      { "icon": "🎓", "title": "MS Dissertation", "detail": "PRF in hip fractures" }
+    ],
+    "memberships": ["Life Member DOA", "Life Member IOA", "Life Member ISKSAA", "Member ASSI", "Member MNAMS", "Member Bombay Orthopedic Society"]
+  },
+  {
+    "slug": "dr-simranjeet-singh",
+    "isPlaceholder": false,
+    "name": "Dr. Simranjeet Singh",
+    "department": "Neurosurgery & Spine",
+    "departmentSlug": "neurosurgery",
+    "rating": "4.9",
+    "photoNote": "Photo placeholder — upload via CMS to public/images/uploads/",
+    "credentials": "MBBS (MAMC), M.Ch Neurosurgery (AIIMS), Fellowship Endovascular Neurosurgery (GB Pant)",
+    "tags": ["Neurosurgery", "Spine Surgery", "Endovascular", "8+ yrs Experience", "AIIMS Trained"],
+    "availability": "Mon, Wed, Fri: 6 PM – 8 PM",
+    "availabilityShort": "Mon, Wed, Fri 6PM-8PM",
+    "quickStats": [
+      { "value": "8+", "label": "Years Experience" },
+      { "value": "7", "label": "Publications" },
+      { "value": "10+", "label": "Conferences" }
+    ],
+    "about": [
+      "Dr. Simranjeet Singh is a highly trained neurosurgeon and Director of Dashvanth Healthcare. He currently serves as Consultant Neurosurgeon at Max Smart Superspeciality Hospital, Saket, New Delhi — one of India's premier tertiary care neurosurgical centres.",
+      "He completed his MBBS from Maulana Azad Medical College (MAMC), New Delhi (2010–2015), and his M.Ch Neurosurgery from the All India Institute of Medical Sciences (AIIMS), New Delhi (2017–2022). He served as Chief Resident at AIIMS (2022–2023), before undertaking a Fellowship in Endovascular Neurosurgery at GB Pant Institute, New Delhi (2023–2024).",
+      "He was subsequently appointed Assistant Professor of Neurosurgery at GB Pant Hospital (Oct 2024 – Apr 2025), followed by Associate Consultant and then Consultant Neurosurgeon at Max Smart Superspeciality Hospital, Saket (2025–Present). Dr. Simranjeet specialises in complex brain tumour surgery, endovascular coiling and flow diversion for cerebral aneurysms, minimally invasive spine surgery, mechanical thrombectomy for acute stroke, and craniovertebral junction disorders. He has 7 peer-reviewed publications and won 1st Prize at the SkullBaseCon 2024 Young Neurosurgeons' session."
+    ],
+    "qualifications": [
+      { "degree": "MBBS", "institute": "MAMC, New Delhi", "years": "2010–2015" },
+      { "degree": "M.Ch Neurosurgery", "institute": "AIIMS, New Delhi", "years": "2017–2022" },
+      { "degree": "Chief Resident, Neurosurgery", "institute": "AIIMS", "years": "Jul 2022–Jul 2023" },
+      { "degree": "Fellowship in Endovascular Neurosurgery", "institute": "GB Pant Institute", "years": "Oct 2023–Oct 2024" }
+    ],
+    "careerTimeline": [
+      { "period": "Oct 2025 – Present", "role": "Consultant Neurosurgery", "place": "Max Smart Superspeciality Hospital, Saket" },
+      { "period": "Apr 2025 – Sep 2025", "role": "Associate Consultant", "place": "Max Smart Superspeciality Hospital, Saket" },
+      { "period": "Oct 2024 – Apr 2025", "role": "Assistant Professor", "place": "GB Pant Institute (GIPMER)" },
+      { "period": "Oct 2023 – Oct 2024", "role": "Fellow, Endovascular Neurosurgery", "place": "GB Pant Institute" },
+      { "period": "Jul 2022 – Jul 2023", "role": "Chief Resident", "place": "AIIMS, New Delhi" },
+      { "period": "Jul 2020 – Jun 2022", "role": "Senior Resident", "place": "AIIMS, New Delhi" },
+      { "period": "Jul 2017 – Jun 2020", "role": "Junior Resident", "place": "AIIMS, New Delhi" }
+    ],
+    "expertise": ["Endovascular Coiling & Flow Diversion (Aneurysm)", "Brain Tumour Surgery (Open & Keyhole)", "Minimally Invasive Spine Surgery", "Lumbar Microdiscectomy & ACDF", "Mechanical Thrombectomy (Acute Stroke)", "VP Shunt (Hydrocephalus)", "Craniovertebral Junction Surgery", "Trigeminal Neuralgia Surgery", "Deep Brain Stimulation", "Cerebrovascular & Vascular Malformations"],
+    "achievements": [
+      { "icon": "🏆", "title": "1st Prize — Young Neurosurgeons Session", "detail": "SkullBaseCon 2024" },
+      { "icon": "🧑‍⚖️", "title": "Member, Scientific Committee", "detail": "SkullBaseCon 2024" },
+      { "icon": "🎓", "title": "Faculty", "detail": "NSI AIIMS 2024" },
+      { "icon": "🌏", "title": "Indian Delegate", "detail": "EAMSC Tokyo 2012" },
+      { "icon": "📚", "title": "7 Peer-Reviewed Publications", "detail": "Indexed international neurosurgery journals" },
+      { "icon": "🏥", "title": "Assistant Professor", "detail": "GB Pant Institute (2024–25)" }
+    ],
+    "memberships": ["Life Member NSI (SNS-437)", "Life Member NSSI (NSSI-S-197)", "Life Member DNA (DNS-283)", "Member CVSI", "International Member AANS (2025–2026)"]
+  },
+  {
+    "slug": "dr-rupali-raj",
+    "isPlaceholder": false,
+    "name": "Dr. Rupali Raj",
+    "department": "Obstetrics & Gynaecology",
+    "departmentSlug": "gynaecology",
+    "rating": "4.9",
+    "photoNote": "Photo placeholder — upload via CMS to public/images/uploads/",
+    "credentials": "MBBS — Lady Hardinge Medical College, Delhi; MS Obstetrics & Gynaecology — GTB Hospital, Delhi; FMAS — Minimally Invasive Surgery (AMASI, Hyderabad)",
+    "tags": ["Lady Hardinge Medical College", "GTB Hospital Delhi", "Ex-AIIMS Patna", "8+ Years Experience"],
+    "availability": "Tue & Thu | 6:00 PM – 8:00 PM",
+    "availabilityShort": "Tue & Thu 6PM-8PM",
+    "quickStats": [
+      { "value": "8+", "label": "Years Experience" },
+      { "value": "FMAS", "label": "Minimally Invasive Surgery" },
+      { "value": "AIIMS", "label": "Patna Experience" }
+    ],
+    "about": [
+      "Dr. Rupali Raj is a highly experienced Obstetrician and Gynaecologist with over 8 years in medicine, trained at two of Delhi's most prestigious institutions — Lady Hardinge Medical College (MBBS) and Guru Tegh Bahadur Hospital (MS Obs & Gynae). She has further specialised in minimally invasive surgery (FMAS) from AMASI, Hyderabad.",
+      "Most recently, Dr. Rupali served as an Obstetrician/Gynaecologist at AIIMS Patna, where she managed complex high-risk pregnancies including severe anaemia, gestational diabetes, pre-eclampsia, eclampsia, HELLP syndrome, placenta accreta spectrum, and malpresentations. She has overseen numerous births annually, including planned caesareans and emergency deliveries.",
+      "At Dashvanth Healthcare, Dr. Rupali brings AIIMS-calibre women's healthcare to East Delhi — offering expert consultations in pregnancy care, gynaecological surgery, fertility evaluation, and reproductive health for women of all ages."
+    ],
+    "qualifications": [
+      { "degree": "MBBS", "institute": "Lady Hardinge Medical College, New Delhi", "years": "2016" },
+      { "degree": "MS Obstetrics & Gynaecology", "institute": "Guru Tegh Bahadur Hospital, Delhi", "years": "2022" },
+      { "degree": "FMAS — Fellowship in Minimally Invasive Surgery", "institute": "AMASI, Hyderabad", "years": "2024" }
+    ],
+    "careerTimeline": [
+      { "period": "2022 – Present", "role": "Obstetrician/Gynaecologist", "place": "AIIMS Patna" },
+      { "period": "2024", "role": "FMAS — Fellowship in Minimally Invasive Surgery", "place": "AMASI, Hyderabad" },
+      { "period": "2022", "role": "MS Obstetrics & Gynaecology", "place": "Guru Tegh Bahadur Hospital, Delhi" },
+      { "period": "2022", "role": "RCOG North Zone Conference Participant", "place": "" },
+      { "period": "2016", "role": "MBBS", "place": "Lady Hardinge Medical College, New Delhi" }
+    ],
+    "expertise": ["High-Risk Obstetrics", "Normal & Caesarean Delivery", "Laparoscopic Surgery", "Hysterectomy (TLH)", "Ovarian Cyst Removal", "Ectopic Pregnancy", "Myomectomy (Fibroid)", "Endometriosis", "Prenatal Care", "Family Planning", "Fertility Evaluation", "Hormone Replacement", "Cervical & Breast Cancer Screening", "Tubal Ligation", "Polycystic Ovary (PCOS)", "Menstrual Disorders"],
+    "achievements": [
+      { "icon": "🏥", "title": "Obstetrician/Gynaecologist", "detail": "AIIMS Patna — managed complex high-risk pregnancies" },
+      { "icon": "🎓", "title": "FMAS Fellowship", "detail": "Minimally Invasive Surgery, AMASI, Hyderabad" },
+      { "icon": "📋", "title": "RCOG North Zone Conference", "detail": "Participant, 2022" }
+    ],
+    "memberships": []
+  },
+  {
+    "slug": null,
+    "isPlaceholder": true,
+    "name": "Paediatrician",
+    "department": "Paediatrics & Child Health",
+    "departmentSlug": "paediatrics",
+    "credentials": "MD Paediatrics",
+    "note": "Specialist in newborn care, child growth, vaccinations & adolescent health",
+    "status": "Joining Soon"
+  },
+  {
+    "slug": null,
+    "isPlaceholder": true,
+    "name": "Radiologist",
+    "department": "Imaging & Radiology",
+    "departmentSlug": "imaging",
+    "credentials": "MD Radiodiagnosis",
+    "note": "Expert in digital X-ray, ultrasound, colour Doppler & diagnostic imaging",
+    "status": "Joining Soon"
+  }
+]

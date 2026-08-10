@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import about from '../data/about.json';
+import site from '../data/site.json';
+---
+
+<Layout title="About Dashvanth Healthcare | Multispeciality Centre East Delhi" description={site.metaDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">{about.eyebrow}</div>
+      <h1>{about.heading}</h1>
+      <p class="sub">{about.sub}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:820px;">
+      <div class="subhead" style="font-size:20px;margin-top:0;">Our Story</div>
+      {about.story.map((p: string) => <p style="color:var(--gray);font-size:15px;line-height:1.8;margin-bottom:16px;">{p}</p>)}
+
+      <div class="subhead" style="font-size:20px;">Our Values</div>
+      <div class="values-grid" style="margin-top:0;">
+        {about.values.map((v: any) => (
+          <div class="value-card">
+            <div class="vico">{v.icon}</div>
+            <h4>{v.title}</h4>
+            <p>{v.text}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="subhead" style="font-size:20px;">Our Facilities</div>
+      <div class="facility-list">
+        {about.facilities.map((f: string) => <div class="facility-item">{f}</div>)}
+      </div>
+
+      <div style="margin-top:36px;text-align:center;">
+        <a class="btn-main" href="/contact/">Book Your Visit →</a>
+      </div>
+    </div>
+  </section>
+</Layout>

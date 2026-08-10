@@ -1,0 +1,305 @@
+backend:
+  name: github
+  repo: dashvanthhealthcare/dashvanth-healthcare-website
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    editor:
+      preview: false
+    files:
+      - file: "src/data/site.json"
+        label: "Contact & Site Info"
+        name: "site"
+        fields:
+          - { label: "Clinic Name", name: "name", widget: "string" }
+          - { label: "Short Name (monogram)", name: "shortName", widget: "string" }
+          - { label: "Title Tag (SEO)", name: "titleTag", widget: "string" }
+          - { label: "Meta Description (SEO)", name: "metaDescription", widget: "text" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Topbar Note", name: "topBarNote", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Phone (display)", name: "phoneDisplay", widget: "string" }
+          - { label: "Landline", name: "landline", widget: "string" }
+          - { label: "WhatsApp Link", name: "whatsappUrl", widget: "string" }
+          - { label: "WhatsApp (display)", name: "whatsappDisplay", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Hours", name: "hours", widget: "string" }
+          - { label: "Pharmacy Hours", name: "pharmacyHours", widget: "string" }
+          - { label: "Google Maps URL", name: "mapsUrl", widget: "string" }
+          - { label: "Google Maps Embed URL", name: "mapsEmbedUrl", widget: "string" }
+          - { label: "Disclaimer", name: "disclaimer", widget: "text" }
+          - { label: "Copyright Line", name: "copyright", widget: "string" }
+          - label: "Nav Links"
+            name: "navLinks"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "About Blurb", name: "aboutBlurb", widget: "text" }
+              - label: "Quick Links"
+                name: "quickLinks"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "href", widget: "string" }
+
+  - name: "home"
+    label: "Homepage Content"
+    files:
+      - file: "src/data/home.json"
+        label: "Homepage Sections"
+        name: "home"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Pill Text", name: "pill", widget: "string" }
+              - { label: "Headline Line 1", name: "h1a", widget: "string" }
+              - { label: "Headline Line 2", name: "h1b", widget: "string" }
+              - { label: "Lead Paragraph", name: "lead", widget: "text" }
+              - { label: "Badges", name: "badges", widget: "list", field: { label: "Badge", name: "badge", widget: "string" } }
+              - label: "Card Stats"
+                name: "cardStats"
+                widget: "list"
+                fields:
+                  - { label: "Value", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+          - label: "Stats Band"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "Why Choose Us"
+            name: "whyChooseUs"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "How It Works"
+            name: "howItWorks"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "num", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "CTA Band"
+            name: "ctaBand"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Checklist", name: "checklist", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
+
+  - name: "about-page"
+    label: "About Page"
+    files:
+      - file: "src/data/about.json"
+        label: "About Page Content"
+        name: "about"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Sub", name: "sub", widget: "string" }
+          - { label: "Story Paragraphs", name: "story", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
+          - label: "Values"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - { label: "Facilities", name: "facilities", widget: "list", field: { label: "Facility", name: "facility", widget: "string" } }
+
+  - name: "departments"
+    label: "Departments"
+    files:
+      - file: "src/data/departments.json"
+        label: "Departments List"
+        name: "departments"
+        fields:
+          - label: "Departments"
+            name: "departments"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Slug (URL)", name: "slug", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Short Name", name: "shortName", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Homepage Blurb", name: "homeBlurb", widget: "text" }
+              - { label: "About", name: "about", widget: "text" }
+              - { label: "Consultant Line", name: "consultantLine", widget: "string" }
+              - { label: "Consultant Doctor Slug", name: "consultantSlug", widget: "string", required: false }
+              - { label: "Conditions Treated", name: "conditions", widget: "list", field: { label: "Condition", name: "condition", widget: "string" } }
+              - { label: "Procedures & Treatments", name: "procedures", widget: "list", field: { label: "Procedure", name: "procedure", widget: "string" } }
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "q", widget: "string" }
+                  - { label: "Answer", name: "a", widget: "text" }
+              - { label: "Blog Category Slug (leave blank if none)", name: "blogCategorySlug", widget: "string", required: false }
+
+  - name: "doctors"
+    label: "Doctors"
+    files:
+      - file: "src/data/doctors.json"
+        label: "Doctors List"
+        name: "doctors"
+        fields:
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Slug (URL, leave blank for placeholder)", name: "slug", widget: "string", required: false }
+              - { label: "Is Placeholder (Joining Soon)", name: "isPlaceholder", widget: "boolean", default: false }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Department", name: "department", widget: "string" }
+              - { label: "Department Slug", name: "departmentSlug", widget: "string" }
+              - { label: "Rating", name: "rating", widget: "string", required: false }
+              - { label: "Photo Note", name: "photoNote", widget: "string", required: false }
+              - { label: "Credentials", name: "credentials", widget: "text" }
+              - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" }, required: false }
+              - { label: "Availability (full)", name: "availability", widget: "string", required: false }
+              - { label: "Availability (short)", name: "availabilityShort", widget: "string", required: false }
+              - label: "Quick Stats"
+                name: "quickStats"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Value", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+              - { label: "About Paragraphs", name: "about", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" }, required: false }
+              - label: "Qualifications"
+                name: "qualifications"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Degree", name: "degree", widget: "string" }
+                  - { label: "Institute", name: "institute", widget: "string" }
+                  - { label: "Years", name: "years", widget: "string" }
+              - label: "Career Timeline"
+                name: "careerTimeline"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Period", name: "period", widget: "string" }
+                  - { label: "Role", name: "role", widget: "string" }
+                  - { label: "Place", name: "place", widget: "string" }
+              - { label: "Areas of Expertise", name: "expertise", widget: "list", field: { label: "Item", name: "item", widget: "string" }, required: false }
+              - label: "Achievements"
+                name: "achievements"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Detail", name: "detail", widget: "string" }
+              - { label: "Memberships", name: "memberships", widget: "list", field: { label: "Membership", name: "membership", widget: "string" }, required: false }
+              - { label: "Note (for placeholder doctors)", name: "note", widget: "string", required: false }
+              - { label: "Status (for placeholder doctors)", name: "status", widget: "string", required: false }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - file: "src/data/testimonials.json"
+        label: "Testimonials List"
+        name: "testimonials"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Role / Location", name: "role", widget: "string" }
+              - { label: "Rating (1-5)", name: "rating", widget: "number", default: 5, min: 1, max: 5 }
+
+  - name: "blog-categories"
+    label: "Blog Categories"
+    files:
+      - file: "src/data/blog-categories.json"
+        label: "Blog Categories List"
+        name: "blog-categories"
+        fields:
+          - label: "Categories"
+            name: "blog-categories"
+            widget: "list"
+            fields:
+              - { label: "Slug (URL)", name: "slug", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Total Planned Articles", name: "totalCount", widget: "number" }
+
+  - name: "blog-articles"
+    label: "Blog Articles"
+    files:
+      - file: "src/data/blog-articles.json"
+        label: "Blog Articles List"
+        name: "blog-articles"
+        fields:
+          - label: "Articles"
+            name: "blog-articles"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Slug (URL)", name: "slug", widget: "string" }
+              - { label: "Category Slug", name: "category", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Reviewed By", name: "reviewedBy", widget: "string" }
+              - label: "Content Blocks"
+                name: "blocks"
+                widget: "list"
+                fields:
+                  - { label: "Type", name: "type", widget: "select", options: ["h2", "h3", "p", "ul", "table"] }
+                  - { label: "Text (for h2/h3/p)", name: "text", widget: "text", required: false }
+                  - { label: "List Items (for ul)", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" }, required: false }
+                  - { label: "Table Headers (for table)", name: "headers", widget: "list", field: { label: "Header", name: "header", widget: "string" }, required: false }
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Question", name: "q", widget: "string" }
+                  - { label: "Answer", name: "a", widget: "text" }

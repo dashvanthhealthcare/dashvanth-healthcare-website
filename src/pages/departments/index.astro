@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import departments from '../../data/departments.json';
+import site from '../../data/site.json';
+---
+
+<Layout title="Departments | Dashvanth Healthcare | Multispeciality Centre East Delhi" description={site.metaDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Our Departments</div>
+      <h1>We Cover a Wide Range of Medical Services</h1>
+      <p class="sub">Seven specialities under one roof in Krishna Nagar Extension, East Delhi.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="dept-grid">
+        {departments.map((d: any) => (
+          <a class="dept-card" href={`/departments/${d.slug}/`}>
+            <div class="dept-ico">{d.icon}</div>
+            <h3>{d.name}</h3>
+            <p>{d.homeBlurb}</p>
+            <div class="dept-link">Learn More →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

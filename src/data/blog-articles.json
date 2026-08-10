@@ -1,0 +1,372 @@
+[
+  {
+    "slug": "when-is-knee-replacement-necessary",
+    "category": "orthopaedics",
+    "title": "When Is Knee Replacement Necessary? A Complete Guide",
+    "reviewedBy": "Dr. Shahrukh Khan, MS Ortho, DNB Ortho (MAMC/NBE)",
+    "blocks": [
+      { "type": "h2", "text": "What Is Total Knee Replacement?" },
+      { "type": "p", "text": "Total knee replacement (TKR), also called total knee arthroplasty, is a surgical procedure where damaged knee joint surfaces are replaced with metal and plastic implants. It is one of the most successful surgeries in modern medicine, restoring mobility to patients with severe knee arthritis." },
+      { "type": "h2", "text": "Signs You May Need Knee Replacement" },
+      { "type": "ul", "items": [
+        "Severe knee pain that limits daily activities — walking, climbing stairs, rising from a chair",
+        "Moderate to severe knee pain at rest, even at night",
+        "Chronic knee inflammation and swelling unrelieved by medication",
+        "Knee deformity — bowing in or out",
+        "Failed non-surgical treatments for 6+ months (physiotherapy, injections, medications)"
+      ]},
+      { "type": "h2", "text": "Who Is a Good Candidate?" },
+      { "type": "p", "text": "Most candidates are 60–80 years old, but age alone is not the criterion. Younger patients with severe post-traumatic arthritis or inflammatory joint disease may also benefit. Your orthopaedic surgeon will assess X-rays, clinical symptoms, and activity goals." },
+      { "type": "h2", "text": "Non-Surgical Alternatives to Try First" },
+      { "type": "ul", "items": [
+        "Physiotherapy and quadriceps strengthening",
+        "Weight loss (every kg lost reduces knee load by 4×)",
+        "Corticosteroid or hyaluronic acid injections",
+        "PRP (Platelet-Rich Plasma) therapy",
+        "Knee braces and walking aids"
+      ]},
+      { "type": "h2", "text": "The Surgery: What to Expect" },
+      { "type": "p", "text": "TKR takes 1.5–2 hours under spinal or general anaesthesia. You will be walking the next day with a physiotherapist. Hospital stay is 3–5 days. Most patients return to independent living in 4–6 weeks and full activity in 3–6 months." },
+      { "type": "h2", "text": "Recovery Tips" },
+      { "type": "ul", "items": [
+        "Follow your physiotherapy programme religiously",
+        "Use ice packs to reduce swelling",
+        "Elevate leg when resting",
+        "Avoid high-impact activities (running, jumping) for 6 months",
+        "Annual follow-up with your surgeon"
+      ]}
+    ],
+    "faqs": [
+      { "q": "How long does a knee replacement last?", "a": "Modern implants last 15–25 years in most patients. Younger, active patients may eventually need revision surgery." },
+      { "q": "Is knee replacement painful?", "a": "Immediate post-op pain is managed with multimodal analgesia. Most patients find the surgery pain far less than the chronic arthritis pain they lived with before." },
+      { "q": "Can both knees be replaced at the same time?", "a": "Simultaneous bilateral TKR is possible but carries higher risk. Most surgeons prefer staging them 6–12 weeks apart." }
+    ]
+  },
+  {
+    "slug": "acl-tear-treatment-delhi",
+    "category": "orthopaedics",
+    "title": "ACL Tear: Symptoms, Diagnosis & Treatment Options in Delhi",
+    "reviewedBy": "Dr. Shahrukh Khan",
+    "blocks": [
+      { "type": "h2", "text": "What Is the ACL?" },
+      { "type": "p", "text": "The anterior cruciate ligament (ACL) is one of the four major ligaments of the knee, providing rotational stability. ACL tears are among the most common sports injuries, affecting athletes in football, cricket, basketball, and badminton." },
+      { "type": "h2", "text": "Causes of ACL Tear" },
+      { "type": "ul", "items": [
+        "Sudden change of direction (cutting movements)",
+        "Landing awkwardly from a jump",
+        "Direct collision or tackle",
+        "Sudden stop while running"
+      ]},
+      { "type": "h2", "text": "Symptoms" },
+      { "type": "ul", "items": [
+        "A \"pop\" sound at the time of injury",
+        "Immediate swelling within hours",
+        "Severe pain and inability to continue activity",
+        "Feeling of knee \"giving way\"",
+        "Loss of full range of motion"
+      ]},
+      { "type": "h2", "text": "Diagnosis" },
+      { "type": "p", "text": "Clinical examination (Lachman test, pivot shift test) combined with MRI confirms ACL tear and associated injuries (meniscus, cartilage, other ligaments)." },
+      { "type": "h2", "text": "Treatment Options" },
+      { "type": "h3", "text": "Non-Surgical (Partial Tears or Inactive Patients)" },
+      { "type": "p", "text": "RICE protocol, physiotherapy and knee bracing can suffice for partial tears or patients with low activity demands. However, chronic instability increases meniscus damage risk." },
+      { "type": "h3", "text": "Surgical: ACL Reconstruction" },
+      { "type": "p", "text": "Arthroscopic ACL reconstruction uses a graft (hamstring or patellar tendon) to recreate the torn ligament. It is a day-care or overnight procedure. Return to sport typically takes 9–12 months with proper rehabilitation." },
+      { "type": "h2", "text": "Recovery Timeline" },
+      { "type": "ul", "items": [
+        "Week 1–2: Swelling control, straight leg raises",
+        "Week 4–6: Stationary cycling, strengthening",
+        "Month 3: Jogging",
+        "Month 6: Sport-specific training",
+        "Month 9–12: Return to competitive sport"
+      ]}
+    ],
+    "faqs": [
+      { "q": "Can I walk with an ACL tear?", "a": "Yes, many patients can walk after an ACL tear once swelling subsides, but the knee may feel unstable, especially during pivoting activities." },
+      { "q": "Do all ACL tears need surgery?", "a": "Not necessarily. Partial tears in low-demand patients can be managed conservatively. Complete tears in athletes or active individuals generally require reconstruction." }
+    ]
+  },
+  {
+    "slug": "hip-replacement-guide",
+    "category": "orthopaedics",
+    "title": "Hip Replacement Surgery: Complete Patient Guide",
+    "reviewedBy": "Dr. Shahrukh Khan",
+    "blocks": [
+      { "type": "h2", "text": "Understanding Hip Replacement" },
+      { "type": "p", "text": "Total hip replacement (THR) removes the damaged ball and socket of the hip joint and replaces it with prosthetic components. It is one of the most transformative surgeries, eliminating severe hip pain and restoring walking ability." },
+      { "type": "h2", "text": "Conditions That Lead to Hip Replacement" },
+      { "type": "ul", "items": [
+        "Osteoarthritis (most common)",
+        "Rheumatoid arthritis",
+        "Avascular necrosis (bone death due to poor blood supply)",
+        "Hip fracture in elderly patients",
+        "Childhood hip dysplasia causing adult arthritis"
+      ]},
+      { "type": "h2", "text": "The Surgery" },
+      { "type": "p", "text": "THR takes 1.5–2 hours. The surgeon removes the worn femoral head and acetabular cartilage, then fits metal, ceramic, or polyethylene implants. Modern techniques (anterior approach) allow faster recovery with less muscle damage." },
+      { "type": "h2", "text": "Recovery Milestones" },
+      { "type": "ul", "items": [
+        "Day 1–2: Standing and walking with a walker",
+        "Week 2–4: Walking independently indoors",
+        "Month 1–3: Return to most daily activities",
+        "Month 3–6: Driving, light sport, stairs without aid"
+      ]},
+      { "type": "h2", "text": "Precautions After Hip Replacement" },
+      { "type": "ul", "items": [
+        "Avoid crossing legs for 6 weeks",
+        "Use raised toilet seats and grab bars",
+        "Sleep with a pillow between knees initially",
+        "No low sofas or bending past 90 degrees (posterior approach)"
+      ]}
+    ],
+    "faqs": [
+      { "q": "How long does a hip replacement last?", "a": "90% of hip replacements last 15–20 years. Highly cross-linked polyethylene and ceramic bearings in modern implants can last 25+ years." },
+      { "q": "Is hip replacement done under general anaesthesia?", "a": "Most surgeons prefer spinal (regional) anaesthesia — you are awake but numb from the waist down, with less risk and faster recovery than general anaesthesia." }
+    ]
+  },
+  {
+    "slug": "stroke-warning-signs-fast",
+    "category": "neurosurgery",
+    "title": "Stroke Warning Signs: FAST and When to Call an Ambulance",
+    "reviewedBy": "Dr. Simranjeet Singh, M.Ch Neurosurgery (AIIMS)",
+    "blocks": [
+      { "type": "h2", "text": "Stroke Is a Medical Emergency" },
+      { "type": "p", "text": "Every minute of stroke, 1.9 million brain neurons die. Prompt action — calling an ambulance immediately — is the single most important thing a bystander can do. Treatment within the \"golden window\" (4.5 hours for clot-busting, 24 hours for thrombectomy) can restore function completely." },
+      { "type": "h2", "text": "The FAST Acronym" },
+      { "type": "ul", "items": [
+        "F — Face drooping: One side of the face droops; asymmetric smile",
+        "A — Arm weakness: One arm weak or numb; cannot hold both arms raised equally",
+        "S — Speech difficulty: Slurred, garbled, or inability to speak or understand",
+        "T — Time to call 112: If ANY of these signs, call immediately"
+      ]},
+      { "type": "h2", "text": "Additional Signs (BE-FAST)" },
+      { "type": "ul", "items": [
+        "B — Balance: Sudden loss of balance or coordination",
+        "E — Eyes: Sudden vision loss or double vision in one or both eyes"
+      ]},
+      { "type": "h2", "text": "Types of Stroke" },
+      { "type": "ul", "items": [
+        "Ischaemic (85%): Blood clot blocks a brain artery. Treated with tPA (clot-buster) or mechanical thrombectomy",
+        "Haemorrhagic (15%): Blood vessel bursts in or around the brain. Surgical treatment in selected cases"
+      ]},
+      { "type": "h2", "text": "Risk Factors You Can Control" },
+      { "type": "ul", "items": [
+        "High blood pressure (most important) — target <130/80 mmHg",
+        "Atrial fibrillation — anticoagulation prevents embolic stroke",
+        "Diabetes and high cholesterol",
+        "Smoking — doubles stroke risk",
+        "Obesity and physical inactivity"
+      ]}
+    ],
+    "faqs": [
+      { "q": "Can stroke happen at any age?", "a": "Yes — while stroke risk increases with age, 10–15% of strokes occur in people under 45. Young stroke causes include cardiac emboli, thrombophilia, and cervical artery dissection." }
+    ]
+  },
+  {
+    "slug": "brain-tumour-symptoms-warning-signs",
+    "category": "neurosurgery",
+    "title": "Brain Tumour Warning Signs You Should Never Ignore",
+    "reviewedBy": "Dr. Simranjeet Singh",
+    "blocks": [
+      { "type": "h2", "text": "Understanding Brain Tumours" },
+      { "type": "p", "text": "Brain tumours can be primary (starting in the brain) or secondary/metastatic (spreading from elsewhere). They are classified as benign (non-cancerous) or malignant (cancerous). Early detection significantly improves outcomes." },
+      { "type": "h2", "text": "Common Warning Signs" },
+      { "type": "h3", "text": "Headaches" },
+      { "type": "p", "text": "Brain tumour headaches are often worst in the morning (increased intracranial pressure when lying flat), worsen progressively, and are associated with nausea or vomiting. A new headache pattern or a headache that is \"the worst of your life\" warrants urgent evaluation." },
+      { "type": "h3", "text": "Seizures" },
+      { "type": "p", "text": "A first-ever seizure in an adult (especially after age 30) requires brain imaging to exclude a tumour. The type of seizure can point to tumour location." },
+      { "type": "h3", "text": "Neurological Deficits" },
+      { "type": "ul", "items": [
+        "Weakness or numbness on one side of the body",
+        "Vision disturbances (double vision, field defects)",
+        "Speech difficulties — slurred speech or word-finding problems",
+        "Balance and coordination problems",
+        "Hearing loss (acoustic neuroma)"
+      ]},
+      { "type": "h3", "text": "Cognitive and Personality Changes" },
+      { "type": "p", "text": "Memory problems, confusion, personality change, or mood disturbance — especially if new and progressive — can indicate a frontal or temporal lobe tumour." },
+      { "type": "h2", "text": "Diagnosis" },
+      { "type": "p", "text": "MRI brain with gadolinium contrast is the standard investigation. CT scan is faster in emergencies. Biopsy confirms the tumour type — essential for treatment planning." },
+      { "type": "h2", "text": "Treatment" },
+      { "type": "ul", "items": [
+        "Surgery (craniotomy or keyhole): primary treatment for accessible tumours",
+        "Radiotherapy: adjuvant or definitive for certain tumours",
+        "Chemotherapy (e.g., temozolomide for glioblastoma)",
+        "Stereotactic radiosurgery (Gamma Knife): for small/deep tumours"
+      ]}
+    ],
+    "faqs": [
+      { "q": "Are all brain tumours fatal?", "a": "No — benign tumours (meningioma, pituitary adenoma, acoustic neuroma) are often curable with surgery. Malignant tumours carry variable prognosis depending on grade and type." }
+    ]
+  },
+  {
+    "slug": "vaccination-schedule-india-2026",
+    "category": "paediatrics",
+    "title": "Complete Vaccination Schedule for Children in India 2026",
+    "reviewedBy": "our specialists",
+    "blocks": [
+      { "type": "h2", "text": "Why Vaccination Is the Most Cost-Effective Healthcare Intervention" },
+      { "type": "p", "text": "Vaccines prevent 2–3 million deaths globally every year. India's National Immunisation Schedule (NIS) has been updated in 2026 with new additions. Keeping your child up-to-date with vaccinations is the single most important thing you can do to protect their health." },
+      { "type": "h2", "text": "NIS 2026 Schedule" },
+      { "type": "ul", "items": [
+        "Birth: BCG (TB), OPV-0, Hepatitis B-1",
+        "6 weeks: DTwP-1, IPV-1, HepB-2, Hib-1, Rotavirus-1, PCV-1",
+        "10 weeks: DTwP-2, IPV-2, Hib-2, Rotavirus-2, PCV-2",
+        "14 weeks: DTwP-3, IPV-3, Hib-3, Rotavirus-3, PCV-3",
+        "6 months: HepB-3, OPV-1",
+        "9 months: MMR-1, OPV-2, Vitamin A (1st dose)",
+        "12 months: Hepatitis A-1, Typhoid conjugate",
+        "15 months: MMR-2, Varicella-1, PCV booster",
+        "18 months: DTwP Booster-1, OPV Booster, Hib Booster, Hepatitis A-2",
+        "2 years: Typhoid booster",
+        "4–6 years: DTwP Booster-2, OPV Booster, MMR-3, Varicella-2",
+        "9–14 years (girls): HPV vaccine (cervical cancer prevention)",
+        "10 years: Tdap, Meningococcal"
+      ]},
+      { "type": "h2", "text": "Optional but Recommended Vaccines" },
+      { "type": "ul", "items": [
+        "Influenza (annual, especially for children with asthma or heart disease)",
+        "Pneumococcal (beyond NIS)",
+        "Meningococcal (for high-risk children)"
+      ]}
+    ],
+    "faqs": [
+      { "q": "My child missed some vaccines — is it too late?", "a": "No — catch-up vaccination is always possible. Our paediatrician will create a personalised catch-up schedule. Vaccination at any age is better than not vaccinating." },
+      { "q": "Are vaccines safe?", "a": "Yes — vaccines undergo the most rigorous safety testing of any medical product. Serious adverse events are extremely rare (1 in millions). The risk of the disease is always far greater than the risk of the vaccine." }
+    ]
+  },
+  {
+    "slug": "fever-in-children-when-to-worry",
+    "category": "paediatrics",
+    "title": "Fever in Children: When to Worry & When to Wait",
+    "reviewedBy": "our specialists",
+    "blocks": [
+      { "type": "h2", "text": "Understanding Fever in Children" },
+      { "type": "p", "text": "Fever (temperature ≥38°C / 100.4°F) is the body's natural immune response to infection. It is not an illness itself — it is a sign that the immune system is working. Most fevers in children are caused by viral infections and resolve in 2–5 days without specific treatment." },
+      { "type": "h2", "text": "Temperature Measurement Guide" },
+      { "type": "ul", "items": [
+        "Rectal (most accurate for infants): ≥38°C = fever",
+        "Axillary (underarm): ≥37.5°C = fever (0.5°C less than rectal)",
+        "Oral: ≥37.8°C = fever",
+        "Forehead / ear strips: Less accurate — use for screening only"
+      ]},
+      { "type": "h2", "text": "When to Seek Immediate Medical Care" },
+      { "type": "ul", "items": [
+        "Any fever in a baby <3 months (even low-grade) — emergency",
+        "Fever >39.4°C in children under 2 years",
+        "Fever lasting >5 days at any age",
+        "Fever with rash, stiff neck, severe headache, light sensitivity (possible meningitis)",
+        "Fever with difficulty breathing, persistent vomiting, or dehydration",
+        "Child very difficult to wake, unusually confused or limp",
+        "Fever with a febrile seizure"
+      ]},
+      { "type": "h2", "text": "Home Management" },
+      { "type": "ul", "items": [
+        "Paracetamol: 15 mg/kg every 4–6 hours",
+        "Ibuprofen (>6 months): 10 mg/kg every 6–8 hours",
+        "Encourage fluids — fever causes fluid loss",
+        "Light clothing — do not bundle up",
+        "Tepid sponging: lukewarm water (not cold/ice)"
+      ]}
+    ],
+    "faqs": [
+      { "q": "Do I need to reduce every fever?", "a": "Not necessarily. Fever serves an immune function. Treat fever if child is uncomfortable, not just because the thermometer reads high. The number alone does not determine treatment — the child's overall appearance does." }
+    ]
+  },
+  {
+    "slug": "cbc-complete-blood-count-explained",
+    "category": "diagnostics",
+    "title": "CBC Blood Test Explained: What Each Value Means",
+    "reviewedBy": "our specialists",
+    "blocks": [
+      { "type": "h2", "text": "What Is a CBC?" },
+      { "type": "p", "text": "A Complete Blood Count (CBC) is the most commonly ordered blood test, providing a comprehensive snapshot of your blood's cellular components. It is used to diagnose anaemia, infections, inflammatory conditions, blood cancers, and monitor treatment response." },
+      { "type": "h2", "text": "Key Values Explained" },
+      { "type": "h3", "text": "Red Blood Cells (RBC)" },
+      { "type": "p", "text": "Normal: Men 4.5–5.9 million/μL; Women 4.0–5.2 million/μL. Low (anaemia): fatigue, pallor, breathlessness. High (polycythaemia): increased clot risk." },
+      { "type": "h3", "text": "Haemoglobin (Hb)" },
+      { "type": "p", "text": "Normal: Men 13–17 g/dL; Women 12–15 g/dL; Children varies by age. Low = anaemia (iron deficiency most common; also B12, thalassaemia). Hb below 8 g/dL is severe anaemia." },
+      { "type": "h3", "text": "MCV (Mean Corpuscular Volume)" },
+      { "type": "p", "text": "Small (microcytic, MCV <80): iron deficiency or thalassaemia. Large (macrocytic, MCV >100): B12 or folate deficiency, liver disease, medications." },
+      { "type": "h3", "text": "White Blood Cells (WBC) — 4,000–11,000/μL" },
+      { "type": "p", "text": "High (leukocytosis): infection, inflammation, stress, steroids, rarely leukaemia. Low (leukopenia): viral infections, medications, immune disorders." },
+      { "type": "h3", "text": "Neutrophils (Normal 40–75%)" },
+      { "type": "p", "text": "High (neutrophilia): bacterial infection, steroids. Low (neutropenia): risk of serious infection below 0.5 × 10⁹/L." },
+      { "type": "h3", "text": "Eosinophils (Normal 1–6%)" },
+      { "type": "p", "text": "High (eosinophilia): allergies, asthma, parasitic infections." },
+      { "type": "h3", "text": "Platelets — 150,000–400,000/μL" },
+      { "type": "p", "text": "Low (thrombocytopenia): dengue, ITP, bone marrow problem, medications. High (thrombocytosis): reactive (infection, iron deficiency) or rarely bone marrow disorder." }
+    ],
+    "faqs": [
+      { "q": "Do I need to fast for a CBC test?", "a": "No — CBC does not require fasting. However, if your CBC is part of a panel that includes fasting tests (lipid profile, FBS), fast for the entire panel." },
+      { "q": "Can a CBC diagnose leukaemia?", "a": "An abnormal CBC (very high WBC, very low platelets, abnormal-looking cells on peripheral smear) raises suspicion and prompts further investigation. Diagnosis requires bone marrow biopsy." }
+    ]
+  },
+  {
+    "slug": "hba1c-diabetes-test-guide",
+    "category": "diagnostics",
+    "title": "HbA1c Test: What It Is, Normal Range & What It Means for Diabetes",
+    "reviewedBy": "our specialists",
+    "blocks": [
+      { "type": "h2", "text": "What Is HbA1c?" },
+      { "type": "p", "text": "HbA1c (glycated haemoglobin) measures the percentage of haemoglobin in your red blood cells that has glucose attached to it. Because red blood cells live for approximately 3 months, HbA1c reflects your average blood sugar level over the past 2–3 months — making it far more informative than a single blood glucose reading." },
+      { "type": "h2", "text": "HbA1c Reference Ranges" },
+      { "type": "ul", "items": [
+        "Normal (non-diabetic): Below 5.7%",
+        "Prediabetes: 5.7%–6.4%",
+        "Diabetes: 6.5% and above",
+        "Diabetic target (on treatment): Below 7.0% (general); <8.0% for elderly or high hypoglycaemia risk"
+      ]},
+      { "type": "h2", "text": "Advantages Over Fasting Blood Sugar" },
+      { "type": "ul", "items": [
+        "No fasting required",
+        "Not affected by a single day's diet",
+        "Shows average control, not just the moment of testing",
+        "Better predictor of diabetic complications"
+      ]},
+      { "type": "h2", "text": "When Is HbA1c Less Reliable?" },
+      { "type": "ul", "items": [
+        "Haemoglobin disorders (sickle cell disease, thalassaemia) — false results",
+        "Severe anaemia or recent blood transfusion",
+        "Haemolytic anaemia — artificially low HbA1c",
+        "Iron deficiency — can falsely elevate HbA1c"
+      ]},
+      { "type": "h2", "text": "What Your HbA1c Result Means" },
+      { "type": "table", "headers": ["HbA1c", "Estimated Average Glucose", "Category"], "rows": [
+        ["5.0%", "5.4 mmol/L (97 mg/dL)", "Normal"],
+        ["6.0%", "7.0 mmol/L (126 mg/dL)", "Prediabetes"],
+        ["7.0%", "8.6 mmol/L (154 mg/dL)", "Diabetes target"],
+        ["9.0%", "11.8 mmol/L (212 mg/dL)", "Poor control"]
+      ]}
+    ],
+    "faqs": [
+      { "q": "How often should I check my HbA1c?", "a": "If well-controlled (below target): every 6 months. If recently changed medication or poorly controlled: every 3 months. New diabetics: every 3 months until stable." }
+    ]
+  },
+  {
+    "slug": "thyroid-function-test-guide",
+    "category": "diagnostics",
+    "title": "Thyroid Function Tests: TSH, T3, T4 — What Your Results Mean",
+    "reviewedBy": "our specialists",
+    "blocks": [
+      { "type": "h2", "text": "Why Thyroid Testing Matters" },
+      { "type": "p", "text": "Thyroid disorders affect 1 in 10 Indians — women are 5–8× more likely to be affected. Hypothyroidism (underactive) and hyperthyroidism (overactive) have vastly different symptoms but both significantly impact quality of life and — if untreated — can cause serious cardiac, bone, and metabolic problems." },
+      { "type": "h2", "text": "The Key Tests" },
+      { "type": "h3", "text": "TSH (Thyroid Stimulating Hormone) — the MOST IMPORTANT screening test" },
+      { "type": "p", "text": "Produced by pituitary gland to stimulate thyroid. Normal: 0.4–4.0 mIU/L (lab-specific ranges vary). High TSH → thyroid underactive → HYPOTHYROIDISM. Low TSH → thyroid overactive → HYPERTHYROIDISM. TSH alone is sufficient to screen for thyroid disease in most cases." },
+      { "type": "h3", "text": "Free T4 (FT4)" },
+      { "type": "p", "text": "The main hormone secreted by the thyroid. Normal: 12–22 pmol/L. Confirmed LOW FT4 + HIGH TSH = Primary hypothyroidism. Confirmed HIGH FT4 + LOW TSH = Hyperthyroidism." },
+      { "type": "h3", "text": "Free T3 (FT3)" },
+      { "type": "p", "text": "Active form of thyroid hormone (T4 converts to T3 in tissues). Less useful for routine screening; helpful for T3 toxicosis and monitoring hyperthyroid treatment." },
+      { "type": "h2", "text": "Thyroid Antibodies" },
+      { "type": "ul", "items": [
+        "Anti-TPO antibodies: marker of Hashimoto's thyroiditis (commonest cause of hypothyroidism)",
+        "TSH receptor antibodies (TRAb): Graves' disease (commonest cause of hyperthyroidism)"
+      ]}
+    ],
+    "faqs": [
+      { "q": "Do I need to fast for thyroid tests?", "a": "No fasting is required for TSH, FT4 or FT3. However, biotin supplements (found in hair/nail supplements) can interfere — stop biotin 2 days before thyroid testing." },
+      { "q": "My TSH is slightly high — do I need medication?", "a": "Subclinical hypothyroidism (mildly elevated TSH with normal FT4) in otherwise well patients is often monitored rather than treated immediately. Treatment is generally recommended if TSH >10, or if symptomatic, pregnant, or trying to conceive." }
+    ]
+  }
+]

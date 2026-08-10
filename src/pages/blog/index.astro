@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import blogCategories from '../../data/blog-categories.json';
+import blogArticles from '../../data/blog-articles.json';
+import site from '../../data/site.json';
+
+const totalPublished = blogArticles.length;
+---
+
+<Layout title="Health Blog | Dashvanth Healthcare | Expert Articles East Delhi" description="71+ expert health articles from our multispeciality team in East Delhi. Orthopaedics, neurosurgery, paediatrics & diagnostics guides.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Health Blog</div>
+      <h1>Health Blog</h1>
+      <p class="sub">71+ expert health articles from our multispeciality team in East Delhi — {totalPublished} published so far, more added regularly.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cat-grid">
+        {blogCategories.map((c: any) => {
+          const published = blogArticles.filter((a: any) => a.category === c.slug).length;
+          return (
+            <a class="cat-card" href={`/blog/${c.slug}/`}>
+              <div class="cat-ico">{c.icon}</div>
+              <h3>{c.name}</h3>
+              <div class="cat-count"><b>{published}</b> published of {c.totalCount} planned articles</div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+</Layout>

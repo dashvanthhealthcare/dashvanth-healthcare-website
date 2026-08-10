@@ -1,0 +1,102 @@
+---
+import site from '../data/site.json';
+import departments from '../data/departments.json';
+import blogCategories from '../data/blog-categories.json';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.titleTag, description = site.metaDescription } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%95%EF%B8%8F</text></svg>" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container row">
+        <div class="contact-bits">
+          <span class="topbar-note">{site.topBarNote}</span>
+          <span>📍 {site.address}</span>
+        </div>
+        <div class="contact-bits">
+          <span>🕐 {site.hours} · {site.pharmacyHours}</span>
+          <a href={`tel:${site.phone}`}>📞 {site.phoneDisplay}</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container row">
+        <a class="brand" href="/">
+          <div class="brand-mark">{site.shortName}</div>
+          <div>
+            <div class="bn">{site.name}</div>
+            <div class="bs">{site.tagline}</div>
+          </div>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+        <nav class="nav-links">
+          {site.navLinks.map((l: any) => <a href={l.href}>{l.label}</a>)}
+          <a href={`tel:${site.phone}`} class="nav-cta">Book Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="fn">{site.name}</div>
+            <div class="ft">{site.tagline}</div>
+            <p class="fd2">{site.footer.aboutBlurb}</p>
+          </div>
+          <div class="fc-col">
+            <h4>Departments</h4>
+            <ul>
+              {departments.map((d: any) => <li><a href={`/departments/${d.slug}/`}>{d.shortName}</a></li>)}
+            </ul>
+          </div>
+          <div class="fc-col">
+            <h4>Health Blog</h4>
+            <ul>
+              {blogCategories.map((c: any) => <li><a href={`/blog/${c.slug}/`}>{c.name.split(' ')[0]} Articles</a></li>)}
+            </ul>
+          </div>
+          <div class="fc-col">
+            <h4>Quick Links</h4>
+            <ul>
+              {site.footer.quickLinks.map((l: any) => <li><a href={l.href}>{l.label}</a></li>)}
+            </ul>
+          </div>
+        </div>
+        <div class="disclaimer">⚠️ {site.disclaimer}</div>
+        <div class="fbot">
+          <span>{site.copyright}</span>
+          <span>{site.address}</span>
+        </div>
+      </div>
+    </footer>
+
+    <a class="wa-float" href={site.whatsappUrl} target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  </body>
+</html>

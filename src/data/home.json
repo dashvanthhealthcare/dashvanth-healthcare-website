@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "pill": "✓ AIIMS-Trained Specialists · ✓ 24×7 Pharmacy · ✓ In-House Diagnostics",
+    "h1a": "Advanced Medicine.",
+    "h1b": "Compassionate Care.",
+    "lead": "East Delhi's trusted multispeciality healthcare centre — expert orthopaedics, neurosurgery, gynaecology, paediatrics, radiology & 24×7 pharmacy under one roof in Krishna Nagar Extension.",
+    "badges": ["AIIMS-Trained Specialists", "24×7 Pharmacy", "In-House Diagnostics"],
+    "cardStats": [
+      { "value": "5", "label": "Expert Doctors" },
+      { "value": "5.0★", "label": "Google Rating" }
+    ]
+  },
+  "stats": [
+    { "value": "5", "label": "Expert Doctors" },
+    { "value": "6+", "label": "Specialities" },
+    { "value": "10,000+", "label": "Patients Treated" },
+    { "value": "24×7", "label": "Pharmacy Open" }
+  ],
+  "about": {
+    "eyebrow": "10+ Years of Excellence",
+    "heading": "Investing in Your Health, Investing in Your Future",
+    "text": "At Dashvanth Healthcare, we go beyond treating illnesses — we deliver complete, compassionate, multispeciality care to every patient. Located in Krishna Nagar Extension, East Delhi, our centre brings hospital-quality expertise right to your neighbourhood.",
+    "features": [
+      { "icon": "🎓", "title": "AIIMS & MAMC-Trained Specialists", "text": "Our senior doctors trained at India's premier institutions with international fellowship experience." },
+      { "icon": "🔬", "title": "In-House Diagnostics & Imaging", "text": "200+ lab tests, digital X-ray, ultrasound & colour Doppler — 6-hour report turnaround, results on WhatsApp." },
+      { "icon": "💊", "title": "24×7 Pharmacy", "text": "Round-the-clock medicines — branded, generic & cold-chain medications, open 365 days a year." }
+    ]
+  },
+  "departmentsSection": {
+    "eyebrow": "Our Departments",
+    "heading": "We Cover a Wide Range of Medical Services"
+  },
+  "whyChooseUs": {
+    "eyebrow": "Why Choose Us",
+    "heading": "Why Choose Dashvanth Healthcare?",
+    "cards": [
+      { "icon": "🎓", "title": "AIIMS-Trained Doctors", "text": "Senior specialists trained at AIIMS & MAMC with international fellowship expertise." },
+      { "icon": "🔬", "title": "In-House Diagnostics", "text": "200+ lab tests with 6-hour turnaround and digital results shared on WhatsApp." },
+      { "icon": "💊", "title": "24×7 Pharmacy", "text": "Round-the-clock pharmacy open 365 days — never be without your medication." },
+      { "icon": "📍", "title": "Conveniently Located", "text": "A-1, Krishna Nagar Extension — serving Vivek Vihar, Shahdara, Preet Vihar & Mayur Vihar." },
+      { "icon": "🧪", "title": "5 Expert Specialists", "text": "Orthopaedics, neurosurgery, gynaecology, paediatrics & radiology under one roof." },
+      { "icon": "⚡", "title": "Fast Report Turnaround", "text": "Lab reports in 6 hours. Imaging same-day. Digital reports on WhatsApp & email." },
+      { "icon": "❤️", "title": "Patient-First Approach", "text": "We listen, explain, and treat. No rushed consultations — your health is our priority." },
+      { "icon": "🏆", "title": "International-Level Care", "text": "Fellowship-trained surgeons delivering world-class outcomes right in East Delhi." },
+      { "icon": "💬", "title": "WhatsApp Consultation", "text": "Quick queries answered on WhatsApp — reports, prescriptions & follow-ups online." },
+      { "icon": "🔄", "title": "Continuous Follow-Up", "text": "Regular monitoring and post-treatment follow-ups to ensure complete recovery." },
+      { "icon": "📋", "title": "Personalised Treatment", "text": "Care plans tailored to your specific condition, lifestyle and medical history." },
+      { "icon": "🛡️", "title": "Safe & Hygienic", "text": "High standards of infection control and hygiene maintained across all departments." }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "heading": "Simple Steps to Quality Healthcare",
+    "steps": [
+      { "num": "01", "title": "Book Appointment", "text": "Call +91-9217328011 or WhatsApp us. Walk-ins always welcome." },
+      { "num": "02", "title": "Consult a Specialist", "text": "Our expert doctors carefully listen to your symptoms and concerns." },
+      { "num": "03", "title": "Diagnosis & Treatment", "text": "Same-day diagnostics if needed. Personalised care plan based on accurate results." },
+      { "num": "04", "title": "Ongoing Recovery", "text": "Digital reports on WhatsApp, follow-ups & guidance for complete recovery." }
+    ]
+  },
+  "ctaBand": {
+    "heading": "Looking for Trusted & Expert Healthcare? You're in the Right Place.",
+    "checklist": ["5 Expert Specialists", "In-House Diagnostics", "24×7 Pharmacy", "Walk-ins Welcome"]
+  },
+  "doctorsSection": {
+    "eyebrow": "Our Medical Team",
+    "heading": "Meet Our Expert Doctors"
+  },
+  "testimonialsSection": {
+    "eyebrow": "Patient Stories",
+    "heading": "What Our Patients Say"
+  }
+}

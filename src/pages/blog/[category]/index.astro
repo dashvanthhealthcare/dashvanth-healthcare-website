@@ -1,0 +1,45 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import blogCategories from '../../../data/blog-categories.json';
+import blogArticles from '../../../data/blog-articles.json';
+
+export async function getStaticPaths() {
+  return blogCategories.map((cat: any) => ({
+    params: { category: cat.slug },
+    props: { cat },
+  }));
+}
+
+const { cat } = Astro.props as { cat: any };
+const articles = blogArticles.filter((a: any) => a.category === cat.slug);
+---
+
+<Layout title={`${cat.name} Articles | Dashvanth Healthcare Blog`} description={`Expert ${cat.name} articles from Dashvanth Healthcare's multispeciality team in East Delhi.`}>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Health Blog</div>
+      <h1>{cat.icon} {cat.name}</h1>
+      <p class="sub">{articles.length} of {cat.totalCount} planned articles published so far — more added regularly via our content team.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      {articles.length === 0 ? (
+        <p class="blog-empty">No articles published yet in this category — check back soon.</p>
+      ) : (
+        <div class="blog-grid">
+          {articles.map((a: any) => (
+            <a class="blog-card" href={`/blog/${cat.slug}/${a.slug}/`}>
+              <div class="bdate">Reviewed by {a.reviewedBy}</div>
+              <h3>{a.title}</h3>
+            </a>
+          ))}
+        </div>
+      )}
+      <div style="margin-top:30px;">
+        <a class="back-link" href="/blog/">← Back to Health Blog</a>
+      </div>
+    </div>
+  </section>
+</Layout>

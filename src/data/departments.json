@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "orthopaedics",
+    "icon": "🦴",
+    "name": "Orthopaedics & Joint Replacement",
+    "shortName": "Orthopaedics",
+    "tagline": "Advanced bone, joint & sports injury care in East Delhi",
+    "homeBlurb": "Arthroscopy, arthroplasty, fracture management, ACL reconstruction & sports medicine.",
+    "about": "Our Orthopaedics department offers comprehensive musculoskeletal care — from fracture management and sports injuries to total knee and hip replacement. Led by Dr. Shahrukh Khan, we combine clinical expertise with modern surgical techniques to restore mobility and quality of life.",
+    "consultantLine": "Dr. Shahrukh Khan (MBBS, MS Orthopaedics)",
+    "consultantSlug": "dr-shahrukh-khan",
+    "conditions": ["Knee Osteoarthritis", "Total Knee Replacement", "Hip Replacement", "ACL / PCL Tear", "Meniscus Injury", "Shoulder Pain & Rotator Cuff", "Frozen Shoulder", "Carpal Tunnel Syndrome", "Tennis Elbow", "Fracture & Trauma", "Osteoporosis", "Scoliosis", "Spine Disorders", "Plantar Fasciitis", "Sports Injuries", "Ankle Sprain", "Bone Tumours", "Paediatric Orthopaedics", "Wrist & Hand Surgery", "Post-surgical Rehabilitation"],
+    "procedures": ["Total Knee Replacement", "Total Hip Replacement", "Arthroscopic Surgery", "ACL Reconstruction", "Fracture Fixation (ORIF)", "PRP Therapy", "Joint Aspiration & Injection", "Carpal Tunnel Release", "Shoulder Stabilisation"],
+    "faqs": [
+      { "q": "When is knee replacement recommended?", "a": "Knee replacement is advised when severe arthritis causes pain that limits daily activities and conservative treatments (physiotherapy, injections) no longer help." },
+      { "q": "Is arthroscopy a major surgery?", "a": "No. Arthroscopy is minimally invasive — 2-3 small incisions, same-day or overnight stay, faster recovery than open surgery." },
+      { "q": "Can sports injuries heal without surgery?", "a": "Many sports injuries (mild sprains, muscle strains) heal with RICE, physiotherapy and PRP. Ligament tears like ACL often need surgical reconstruction for full return to sport." },
+      { "q": "How long is recovery after hip replacement?", "a": "Most patients walk the next day and resume daily activities in 4–6 weeks. Full recovery takes 3–6 months." }
+    ],
+    "blogCategorySlug": "orthopaedics"
+  },
+  {
+    "slug": "neurosurgery",
+    "icon": "🧠",
+    "name": "Neurosurgery & Spine",
+    "shortName": "Neurosurgery",
+    "tagline": "Expert brain, spine & endovascular neurosurgery in Delhi",
+    "homeBlurb": "Brain, spine & endovascular neurosurgery. Minimally invasive procedures by AIIMS-trained surgeons.",
+    "about": "Led by Dr. Simranjeet Singh — an M.Ch from AIIMS with fellowship training in endovascular neurosurgery — our Neurosurgery department handles complex brain tumours, spinal disorders, stroke interventions and vascular malformations. We offer both open and minimally invasive endovascular approaches.",
+    "consultantLine": "Dr. Simranjeet Singh (MBBS MAMC, M.Ch Neurosurgery AIIMS, Fellowship Endovascular)",
+    "consultantSlug": "dr-simranjeet-singh",
+    "conditions": ["Slipped Disc (Lumbar/Cervical)", "Brain Tumour", "Cervical Spondylosis", "Lumbar Canal Stenosis", "Sciatica", "Aneurysm & AVM", "Hydrocephalus", "Trigeminal Neuralgia", "Epilepsy", "Head Injury & Trauma", "Stroke (Haemorrhagic & Ischaemic)", "Spinal Cord Compression", "Craniovertebral Junction Disorders", "Carotid Artery Stenosis", "Subdural Haematoma", "Peripheral Nerve Compression", "Cerebellopontine Angle Tumours", "Post-stroke Rehabilitation", "Spinal Instability", "Movement Disorders"],
+    "procedures": ["Endovascular Coiling / Flow Diversion", "Lumbar Microdiscectomy", "Cervical Disc Surgery (ACDF)", "Craniotomy for Brain Tumour", "VP Shunt (Hydrocephalus)", "Spinal Fusion", "Deep Brain Stimulation", "Carpal Tunnel Release", "Minimally Invasive Spine Surgery", "Mechanical Thrombectomy (Stroke)"],
+    "faqs": [
+      { "q": "What is endovascular neurosurgery?", "a": "Endovascular neurosurgery treats blood vessel problems in the brain (aneurysms, AVMs) through a thin catheter via the groin — no open brain surgery needed, faster recovery." },
+      { "q": "Can a slipped disc heal without surgery?", "a": "Yes, 90% of disc problems improve with physiotherapy, pain management and time. Surgery is reserved for persistent neurological weakness or failed conservative care." },
+      { "q": "What are early warning signs of a brain tumour?", "a": "New or worsening headaches (especially morning), seizures, vision/speech changes, memory issues, or unexplained personality changes warrant urgent MRI evaluation." },
+      { "q": "How soon after a stroke should I seek help?", "a": "Immediately — call an ambulance. Clot-busting medication works within 4.5 hours and mechanical thrombectomy within 24 hours of onset. Time = brain cells." }
+    ],
+    "blogCategorySlug": "neurosurgery"
+  },
+  {
+    "slug": "gynaecology",
+    "icon": "🌸",
+    "name": "Gynaecology & Obstetrics",
+    "shortName": "Gynaecology",
+    "tagline": "Complete women's health — pregnancy, antenatal care, gynaecological conditions & preventive health",
+    "homeBlurb": "Complete women's health — pregnancy, antenatal care, gynaecological conditions & preventive health.",
+    "about": "Led by Dr. Rupali Raj — trained at Lady Hardinge Medical College and GTB Hospital, with further fellowship in minimally invasive surgery — our Gynaecology & Obstetrics department offers expert consultations in pregnancy care, gynaecological surgery, fertility evaluation, and reproductive health for women of all ages, including high-risk obstetrics.",
+    "consultantLine": "Dr. Rupali Raj (MBBS Lady Hardinge, MS Obs & Gynae GTB Hospital, FMAS)",
+    "consultantSlug": "dr-rupali-raj",
+    "conditions": ["High-Risk Obstetrics", "Normal & Caesarean Delivery", "Ovarian Cyst", "Ectopic Pregnancy", "Fibroid (Myoma)", "Endometriosis", "PCOS", "Menstrual Disorders", "Infertility", "Menopause", "Cervical & Breast Cancer Screening"],
+    "procedures": ["Laparoscopic Surgery", "Hysterectomy (TLH)", "Ovarian Cyst Removal", "Myomectomy (Fibroid)", "Prenatal Care", "Family Planning", "Fertility Evaluation", "Hormone Replacement", "Tubal Ligation"],
+    "faqs": [
+      { "q": "When should I see a gynaecologist?", "a": "Any time you notice irregular periods, pelvic pain, unusual discharge, or are planning a pregnancy — plus annual preventive check-ups from age 21, including cervical and breast cancer screening." },
+      { "q": "Is laparoscopic surgery safe?", "a": "Yes. Laparoscopic (keyhole) surgery uses small incisions, causes less pain and blood loss, and allows faster recovery than open surgery for most gynaecological conditions, including fibroids and ovarian cysts." },
+      { "q": "How is a high-risk pregnancy monitored?", "a": "High-risk pregnancies (with conditions like gestational diabetes, hypertension, or a history of complications) are monitored with more frequent visits, additional scans, and close blood pressure and growth tracking to ensure a safe delivery." },
+      { "q": "How is PCOS managed?", "a": "PCOS is managed with a combination of lifestyle changes, weight management, and medication to regulate periods, manage symptoms, and support fertility when planning a pregnancy." }
+    ],
+    "blogCategorySlug": null
+  },
+  {
+    "slug": "paediatrics",
+    "icon": "👶",
+    "name": "Paediatrics & Child Health",
+    "shortName": "Paediatrics",
+    "tagline": "Compassionate child healthcare from newborn to adolescent",
+    "homeBlurb": "Newborn to adolescent care — vaccinations, growth monitoring, illness management & nutrition.",
+    "about": "Our Paediatrics department provides comprehensive healthcare for children from birth through adolescence. Services include routine well-child visits, immunisation, developmental assessments, management of acute illnesses (fever, diarrhoea, infections) and chronic conditions (asthma, anaemia, ADHD).",
+    "consultantLine": "Senior Paediatrician (available Mon–Sat)",
+    "consultantSlug": null,
+    "conditions": ["Fever & Infections", "Newborn Care", "Vaccination & Immunisation", "Childhood Asthma", "Food Allergies & Eczema", "Growth & Developmental Delay", "Neonatal Jaundice", "Iron Deficiency Anaemia", "Diarrhoea & Dehydration", "Recurrent Respiratory Infections", "ADHD & Learning Difficulties", "Childhood Obesity", "Vitamin D & B12 Deficiency", "Tonsillitis & Adenoids", "Ear Infections (Otitis Media)", "UTI in Children", "Dengue in Children", "Typhoid", "Skin Conditions", "Adolescent Health"],
+    "procedures": ["Well-child Visits", "Growth Monitoring", "National Immunisation Schedule (NIS 2026)", "Developmental Screening", "Nebulisation", "ORS & Rehydration Therapy", "Iron Infusion", "Allergy Testing", "Hearing & Vision Screening", "School Health Assessment"],
+    "faqs": [
+      { "q": "When should I take my child to the doctor for fever?", "a": "Infants <3 months with any fever, or children with fever >103°F (39.4°C), fever lasting >3 days, rash, difficulty breathing, or persistent vomiting — visit immediately." },
+      { "q": "Is the 2026 vaccination schedule different?", "a": "Yes, India updated NIS 2026 — it now includes rotavirus booster, pneumococcal vaccines and HPV for girls aged 9-14. Ask our paediatrician for a personalised catch-up schedule." },
+      { "q": "How do I know if my child has ADHD?", "a": "Signs include persistent inattention, hyperactivity or impulsivity beyond what is typical for the child's age, present in at least two settings (home + school) and affecting functioning for 6+ months." },
+      { "q": "What should I do if my baby has jaundice?", "a": "Mild jaundice in the first week is common. Severe yellowing, yellow in whites of eyes, poor feeding or sleepiness needs phototherapy — visit us promptly." }
+    ],
+    "blogCategorySlug": "paediatrics"
+  },
+  {
+    "slug": "imaging",
+    "icon": "📡",
+    "name": "Imaging & Radiology",
+    "shortName": "Imaging",
+    "tagline": "X-ray, ultrasound & ECG imaging at Dashvanth Healthcare",
+    "homeBlurb": "Digital X-ray, ultrasound & colour Doppler with expert radiologist reporting — same-day results.",
+    "about": "Our Imaging & Radiology unit provides digital X-rays, ultrasound (USG), and ECG recording with same-day radiologist reports. Images are digitally archived and can be shared on WhatsApp.",
+    "consultantLine": "Radiologist-reported studies — digital reports same day",
+    "consultantSlug": null,
+    "conditions": ["Digital X-Ray", "Ultrasound (USG Abdomen / Pelvis)", "Obstetric USG (Pregnancy Scan)", "ECG Recording", "Colour Doppler", "Chest X-Ray", "Bone Density Assessment", "Soft Tissue USG", "Follicular Study (Fertility)", "Musculoskeletal USG"],
+    "procedures": ["Digital X-Ray (all regions)", "2D Ultrasound", "Colour Doppler Vascular Study", "Obstetric Biometry", "Follicular Monitoring", "ECG 12-Lead Recording", "Digital Report Dispatch (WhatsApp)"],
+    "faqs": [
+      { "q": "Do I need a doctor's referral for an X-ray?", "a": "A prescription is recommended for accurate clinical correlation. For emergencies (fractures, accidents), walk in and our staff will assist." },
+      { "q": "How soon will I get my ultrasound report?", "a": "Most reports are ready within 2–4 hours and sent digitally. Urgent cases are prioritised." },
+      { "q": "Is the ultrasound safe during pregnancy?", "a": "Yes — diagnostic ultrasound uses sound waves and is completely safe for both mother and baby." },
+      { "q": "Do you offer Colour Doppler?", "a": "Yes, Colour Doppler is available for vascular studies (DVT, carotid), obstetric assessment, and scrotal/testicular evaluation." }
+    ],
+    "blogCategorySlug": null
+  },
+  {
+    "slug": "diagnostics-lab",
+    "icon": "🔬",
+    "name": "Diagnostics Laboratory",
+    "shortName": "Diagnostics Lab",
+    "tagline": "Accurate, affordable blood tests & diagnostics in East Delhi",
+    "homeBlurb": "200+ tests, accurate & affordable — CBC, thyroid, dengue, Vitamin D, reports in 6 hours.",
+    "about": "Our in-house diagnostics lab offers 200+ tests with 6-hour TAT for most reports. NABL-quality process controls, automated analysers, and trained pathology staff ensure accurate results. Home sample collection available across East Delhi.",
+    "consultantLine": "NABL-accredited in-house lab — Reports in 6 hours",
+    "consultantSlug": null,
+    "conditions": ["Complete Blood Count (CBC)", "Thyroid Function (TSH, T3, T4)", "HbA1c & Diabetes Panel", "Liver Function Tests (LFT)", "Kidney Function Tests (KFT)", "Lipid Profile & Cardiac Risk", "Vitamin D & B12", "Iron Studies & Anaemia Panel", "Dengue NS1 & Serology", "Typhoid (Widal / Typhidot)", "Urine Routine & Microscopy", "Blood Culture & Sensitivity", "CRP & ESR Inflammation Markers", "Hormone Panel (FSH, LH, Prolactin)", "COVID / Viral PCR", "Stool Routine & Culture", "Tumour Markers (PSA, CA125, CEA)", "Allergy Panel", "ECG & Cardiac Enzymes", "Semen Analysis"],
+    "procedures": ["Home Sample Collection", "Venepuncture & Sample Processing", "Automated CBC & ESR", "HbA1c (Glycated Haemoglobin)", "Immunoassay (TSH, Hormones)", "Urine Dipstick & Microscopy", "Culture & Sensitivity", "Serology & Rapid Tests", "Blood Glucose Monitoring", "ECG Recording"],
+    "faqs": [
+      { "q": "How early can I come for a fasting blood test?", "a": "We accept fasting samples from 7 AM. Please fast for 8–12 hours (water allowed) before tests like FBS, lipid profile, and HbA1c." },
+      { "q": "Is home sample collection available?", "a": "Yes — we offer home collection across East Delhi (Krishna Nagar Extension, Vivek Vihar, Shahdara, Preet Vihar, Mayur Vihar). Book via WhatsApp." },
+      { "q": "What is your report turnaround time?", "a": "Routine tests: 6 hours. Culture reports: 48–72 hours. Urgent CBC/glucose: 1–2 hours. Reports sent digitally on WhatsApp." },
+      { "q": "Do you accept Ayushman Bharat / CGHS?", "a": "Please call or WhatsApp us to confirm the latest empanelled schemes — coverage changes periodically." }
+    ],
+    "blogCategorySlug": "diagnostics"
+  },
+  {
+    "slug": "pharmacy",
+    "icon": "💊",
+    "name": "24×7 Pharmacy",
+    "shortName": "Pharmacy",
+    "tagline": "Round-the-clock medicines & healthcare products in East Delhi",
+    "homeBlurb": "Round-the-clock medicines, branded & generic drugs, cold-chain storage & home delivery.",
+    "about": "Dashvanth Healthcare's in-house pharmacy operates 24×7 — so you can fill prescriptions at any hour. We stock branded and generic medicines, OTC products, surgical consumables, baby care, health supplements, and medical equipment.",
+    "consultantLine": "Licensed Pharmacist on duty — 24 hours, 7 days",
+    "consultantSlug": null,
+    "conditions": ["Prescription Filling", "Generic Medicine Dispensing", "OTC Medicines", "Baby & Infant Care Products", "Surgical Consumables & Dressings", "Health Supplements & Vitamins", "Diabetic Care Products", "Orthopaedic Supports & Braces", "BP Monitors & Glucometers", "Nebulisers & Accessories"],
+    "procedures": ["24×7 Dispensing", "Prescription Verification", "Drug Interaction Check", "Patient Counselling", "Generic Substitution (as prescribed)", "Medicine Delivery (select areas)", "Cold Chain Vaccines & Insulin Storage"],
+    "faqs": [
+      { "q": "Are you open on public holidays?", "a": "Yes — our pharmacy is open 24 hours, 365 days including all public holidays and festivals." },
+      { "q": "Do you stock insulin and cold-chain medicines?", "a": "Yes, we maintain a refrigerated section for insulin, vaccines, and other temperature-sensitive medicines." },
+      { "q": "Can I get a generic substitute for expensive medicines?", "a": "Yes, our pharmacist can suggest approved generic equivalents with the same active ingredient and efficacy, helping you save significantly." },
+      { "q": "Do you do home medicine delivery?", "a": "WhatsApp your prescription to +91-88823 40881 and we will confirm availability and delivery options in your area." }
+    ],
+    "blogCategorySlug": null
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "slug": "orthopaedics", "icon": "🦴", "name": "Orthopaedics & Joint Replacement", "totalCount": 20 },
+  { "slug": "neurosurgery", "icon": "🧠", "name": "Neurosurgery & Spine", "totalCount": 18 },
+  { "slug": "paediatrics", "icon": "👶", "name": "Paediatrics & Child Health", "totalCount": 17 },
+  { "slug": "diagnostics", "icon": "📄", "name": "Diagnostics", "totalCount": 16 }
+]

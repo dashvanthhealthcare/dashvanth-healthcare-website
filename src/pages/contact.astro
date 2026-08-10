@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import departments from '../data/departments.json';
+---
+
+<Layout title="Contact Dashvanth Healthcare | East Delhi | Map & Directions" description={`Contact ${site.name} — ${site.address}. Call ${site.phoneDisplay} or WhatsApp to book an appointment.`}>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Get In Touch</div>
+      <h1>Contact & Location</h1>
+      <p class="sub">{site.name}, {site.address} · Open {site.hours} · {site.pharmacyHours}</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h3 style="font-size:20px;color:var(--navy2);margin-bottom:16px;">📅 Request an Appointment</h3>
+          <form name="appointment" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="appointment" />
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+            <div class="form-row">
+              <div class="fg">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+              <div class="fg">
+                <label for="phone">Phone *</label>
+                <input id="phone" name="phone" type="tel" required />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="department">Preferred Department *</label>
+              <select id="department" name="department" required>
+                <option value="">— Select a department —</option>
+                {departments.map((d: any) => <option value={d.name}>{d.name}</option>)}
+              </select>
+            </div>
+            <div class="fg">
+              <label for="date">Preferred Date</label>
+              <input id="date" name="date" type="date" />
+            </div>
+            <div class="fg">
+              <label for="message">Message / Additional Details</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <button class="btn-sub" type="submit">Send Appointment Request →</button>
+          </form>
+          <p style="text-align:center;margin-top:14px;font-size:13px;color:var(--gray);">
+            Or WhatsApp directly: <a href={site.whatsappUrl} target="_blank" rel="noopener" style="color:var(--teal);font-weight:700;">{site.whatsappDisplay}</a>
+          </p>
+        </div>
+        <div class="cinfo">
+          <h3>Contact Information</h3>
+          <div class="cinfo-item">
+            <div class="cinfo-ico">📞</div>
+            <div>
+              <div class="cl">Phone</div>
+              <a class="cv" href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
+              <div class="cv2">Landline: {site.landline}</div>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-ico">💬</div>
+            <div>
+              <div class="cl">WhatsApp</div>
+              <a class="cv" href={site.whatsappUrl} target="_blank" rel="noopener">{site.whatsappDisplay}</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-ico">🏥</div>
+            <div>
+              <div class="cl">Address</div>
+              <div class="cv">{site.name}</div>
+              <div class="cv2">{site.address}</div>
+              <a class="cv2" href={site.mapsUrl} target="_blank" rel="noopener">📍 View on Google Maps ↗</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-ico">🕐</div>
+            <div>
+              <div class="cl">Hours</div>
+              <div class="cv2">{site.hours}</div>
+              <div class="cv2">{site.pharmacyHours}</div>
+            </div>
+          </div>
+          <div class="map-embed">
+            <iframe src={site.mapsEmbedUrl} loading="lazy" title="Dashvanth Healthcare Location"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

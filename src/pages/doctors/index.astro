@@ -1,0 +1,44 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import doctors from '../../data/doctors.json';
+import site from '../../data/site.json';
+
+const initials = (name: string) => name.replace('Dr. ', '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+---
+
+<Layout title="Our Doctors | Dashvanth Healthcare | Multispeciality Centre East Delhi" description={site.metaDescription}>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Our Medical Team</div>
+      <h1>Meet Our Expert Doctors</h1>
+      <p class="sub">AIIMS & MAMC-trained specialists delivering hospital-quality care in East Delhi.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="doc-grid">
+        {doctors.map((d: any) => (
+          d.isPlaceholder ? (
+            <div class="doc-card placeholder">
+              <div class="doc-avatar">📷</div>
+              <h3>{d.name}</h3>
+              <div class="doc-dept">{d.department}</div>
+              <div class="doc-avail">{d.credentials}</div>
+              <p style="font-size:12.5px;color:var(--gray);margin-top:8px;">{d.note}</p>
+              <div class="soon-badge">{d.status}</div>
+            </div>
+          ) : (
+            <a class="doc-card linked" href={`/doctors/${d.slug}/`}>
+              <div class="doc-avatar">{initials(d.name)}</div>
+              <h3>{d.name}</h3>
+              <div class="doc-dept">{d.department}</div>
+              <div class="doc-rating">⭐ {d.rating}</div>
+              <div class="doc-avail">{d.availabilityShort}</div>
+            </a>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

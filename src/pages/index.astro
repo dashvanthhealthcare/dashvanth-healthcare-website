@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import home from '../data/home.json';
+import departments from '../data/departments.json';
+import doctors from '../data/doctors.json';
+import testimonials from '../data/testimonials.json';
+
+const initials = (name: string) => name.replace('Dr. ', '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+---
+
+<Layout>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="container hero-inner">
+      <div class="hero-pill">{home.hero.pill}</div>
+      <h1>{home.hero.h1a}<br />{home.hero.h1b}</h1>
+      <p class="lead">{home.hero.lead}</p>
+      <div class="hero-badge-row">
+        {home.hero.badges.map((b: string) => <span class="hbadge">✓ {b}</span>)}
+      </div>
+      <div class="hero-btns">
+        <a class="btn-main" href={`tel:${site.phone}`}>📞 Book Appointment</a>
+        <a class="btn-ghost" href={site.whatsappUrl} target="_blank" rel="noopener">💬 WhatsApp Us</a>
+        <a class="btn-ghost" href={site.mapsUrl} target="_blank" rel="noopener">📍 Directions</a>
+      </div>
+      <div class="hero-stat-row">
+        {home.hero.cardStats.map((s: any) => (
+          <div class="hstat">
+            <div class="hn">{s.value}</div>
+            <div class="hl">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band" style="padding:28px 0;">
+    <div class="container stats-grid">
+      {home.stats.map((s: any) => (
+        <div class="sbox">
+          <div class="sn">{s.value}</div>
+          <div class="stat-l">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="hdr c">
+        <div class="eyebrow">{home.about.eyebrow}</div>
+        <h2>{home.about.heading}</h2>
+      </div>
+      <p class="about-text">{home.about.text}</p>
+      <div class="feature-grid">
+        {home.about.features.map((f: any) => (
+          <div class="feature-card">
+            <div class="fico">{f.icon}</div>
+            <h3>{f.title}</h3>
+            <p>{f.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPARTMENTS -->
+  <section class="why-section" id="departments">
+    <div class="container">
+      <div class="hdr c">
+        <div class="eyebrow">{home.departmentsSection.eyebrow}</div>
+        <h2>{home.departmentsSection.heading}</h2>
+      </div>
+      <div class="dept-grid">
+        {departments.map((d: any) => (
+          <a class="dept-card" href={`/departments/${d.slug}/`}>
+            <div class="dept-ico">{d.icon}</div>
+            <h3>{d.name}</h3>
+            <p>{d.homeBlurb}</p>
+            <div class="dept-link">Learn More →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why">
+    <div class="container">
+      <div class="hdr c">
+        <div class="eyebrow">{home.whyChooseUs.eyebrow}</div>
+        <h2>{home.whyChooseUs.heading}</h2>
+      </div>
+      <div class="why-grid">
+        {home.whyChooseUs.cards.map((c: any) => (
+          <div class="why-card">
+            <div class="wi">{c.icon}</div>
+            <h3>{c.title}</h3>
+            <p>{c.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="why-section" id="how-it-works">
+    <div class="container">
+      <div class="hdr c">
+        <div class="eyebrow">{home.howItWorks.eyebrow}</div>
+        <h2>{home.howItWorks.heading}</h2>
+      </div>
+      <div class="steps-grid">
+        {home.howItWorks.steps.map((s: any) => (
+          <div class="step-card">
+            <div class="step-num">{s.num}</div>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" style="padding:0;">
+    <div class="container cta-band-inner">
+      <h2>{home.ctaBand.heading}</h2>
+      <div class="cta-checklist">
+        {home.ctaBand.checklist.map((c: string) => <span>✓ {c}</span>)}
+      </div>
+      <a class="btn-main" href="/contact/" style="background:#fff;color:var(--teal);box-shadow:none;">Book Appointment →</a>
+    </div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section id="doctors">
+    <div class="container">
+      <div class="hdr c">
+        <div class="eyebrow">{home.doctorsSection.eyebrow}</div>
+        <h2>{home.doctorsSection.heading}</h2>
+      </div>
+      <div class="doc-grid">
+        {doctors.map((d: any) => (
+          d.isPlaceholder ? (
+            <div class="doc-card placeholder">
+              <div class="doc-avatar">📷</div>
+              <h3>{d.name}</h3>
+              <div class="doc-dept">{d.department}</div>
+              <div class="doc-avail">{d.credentials}</div>
+              <div class="soon-badge">{d.status}</div>
+            </div>
+          ) : (
+            <a class="doc-card linked" href={`/doctors/${d.slug}/`}>
+              <div class="doc-avatar">{initials(d.name)}</div>
+              <h3>{d.name}</h3>
+              <div class="doc-dept">{d.department}</div>
+              <div class="doc-rating">⭐ {d.rating}</div>
+              <div class="doc-avail">{d.availabilityShort}</div>
+            </a>
+          )
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-sec" id="testimonials">
+    <div class="container">
+      <div class="hdr c light">
+        <div class="eyebrow">{home.testimonialsSection.eyebrow}</div>
+        <h2>{home.testimonialsSection.heading}</h2>
+      </div>
+      <div class="testi-grid">
+        {testimonials.map((t: any) => (
+          <div class="tc">
+            <div class="stars">{'★'.repeat(t.rating)}</div>
+            <p>"{t.quote}"</p>
+            <div class="tauth">
+              <div class="tav">{t.author.split(' ').map((w: string) => w[0]).join('').slice(0,2)}</div>
+              <div>
+                <div class="tname">{t.author}</div>
+                <div class="tcond">{t.role}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact-cta">
+    <div class="container" style="text-align:center;">
+      <div class="hdr c">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Ready to Book Your Visit?</h2>
+        <div class="sub">Call, WhatsApp, or visit us for a full contact form and directions.</div>
+      </div>
+      <div class="hero-btns" style="justify-content:center;">
+        <a class="btn-main" href="/contact/">📅 Contact & Book Now →</a>
+      </div>
+    </div>
+  </section>
+</Layout>

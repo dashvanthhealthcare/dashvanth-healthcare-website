@@ -1,0 +1,37 @@
+{
+  "name": "Dashvanth Healthcare",
+  "shortName": "DH",
+  "titleTag": "Dashvanth Healthcare | Multispeciality Centre East Delhi | Orthopaedics · Neurosurgery · Gynaecology",
+  "metaDescription": "Dashvanth Healthcare – East Delhi's trusted multispeciality centre. Expert orthopaedics, neurosurgery, gynaecology, paediatrics, radiology & 24×7 pharmacy in Krishna Nagar Extension. Call +91-9217328011.",
+  "tagline": "Multispeciality Centre · East Delhi",
+  "topBarNote": "Walk-ins Welcome · Now Accepting Patients",
+  "phone": "+91-9217328011",
+  "phoneDisplay": "+91-9217328011",
+  "landline": "011-41670042",
+  "whatsappUrl": "https://wa.me/918882340881",
+  "whatsappDisplay": "+91-88823 40881",
+  "address": "A-1, Krishna Nagar Extension, Near Geeta Colony Police Station, Delhi - 110051",
+  "hours": "Mon–Sat 10 AM – 8 PM",
+  "pharmacyHours": "Pharmacy 24×7",
+  "mapsUrl": "https://share.google/JqD262GLJvDrbUgo0",
+  "mapsEmbedUrl": "https://maps.google.com/maps?q=A-1+Krishna+Nagar+Extension+Near+Geeta+Colony+Delhi+110051&output=embed&z=16",
+  "disclaimer": "Content on this website is for informational purposes only. Always consult a qualified doctor.",
+  "copyright": "© 2026 Dashvanth Healthcare. All rights reserved.",
+  "navLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "Departments", "href": "/departments/" },
+    { "label": "Health Blog", "href": "/blog/" },
+    { "label": "Doctors", "href": "/doctors/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "footer": {
+    "aboutBlurb": "East Delhi's trusted multispeciality healthcare centre — expert orthopaedics, neurosurgery, gynaecology, paediatrics, radiology & 24×7 pharmacy under one roof in Krishna Nagar Extension.",
+    "quickLinks": [
+      { "label": "About Us", "href": "/about/" },
+      { "label": "Dr. Shahrukh Khan", "href": "/doctors/dr-shahrukh-khan/" },
+      { "label": "Dr. Simranjeet Singh", "href": "/doctors/dr-simranjeet-singh/" },
+      { "label": "Contact & Location", "href": "/contact/" },
+      { "label": "Sitemap", "href": "/sitemap-index.xml" }
+    ]
+  }
+}

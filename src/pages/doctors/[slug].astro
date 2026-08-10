@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import doctors from '../../data/doctors.json';
+import site from '../../data/site.json';
+
+export async function getStaticPaths() {
+  const real = doctors.filter((d: any) => !d.isPlaceholder);
+  return real.map((doc: any) => ({
+    params: { slug: doc.slug },
+    props: { doc },
+  }));
+}
+
+const { doc } = Astro.props as { doc: any };
+const initials = doc.name.replace('Dr. ', '').split(' ').map((w: string) => w[0]).join('').slice(0, 2).toUpperCase();
+---
+
+<Layout title={`${doc.name} | ${doc.department} | Dashvanth Healthcare`} description={doc.about[0]}>
+  <section class="doc-hero">
+    <div class="container doc-hero-grid">
+      <div class="doc-hero-avatar">{initials}</div>
+      <div>
+        <h1>{doc.name}</h1>
+        <div class="dept-name">{doc.department}</div>
+        <p class="creds">{doc.credentials}</p>
+        <div class="tag-row">
+          {doc.tags.map((t: string) => <span class="tag-chip">{t}</span>)}
+        </div>
+        <div class="avail-line">🕐 {doc.availability}</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <div class="stat-row">
+        {doc.quickStats.map((s: any) => (
+          <div class="dstat">
+            <div class="dn">{s.value}</div>
+            <div class="dl">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:820px;">
+      <div class="subhead" style="font-size:20px;margin-top:0;">About {doc.name}</div>
+      {doc.about.map((p: string) => <p style="color:var(--gray);font-size:15px;line-height:1.8;margin-bottom:16px;">{p}</p>)}
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">Qualifications</div>
+        <h2>Education & Qualifications</h2>
+      </div>
+      <div class="edu-grid">
+        {doc.qualifications.map((q: any) => (
+          <div class="edu-card">
+            <div class="el">{q.years}</div>
+            <div class="ev">{q.degree}</div>
+            <div class="es">{q.institute}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">Career</div>
+        <h2>Career Timeline</h2>
+      </div>
+      <div class="tl">
+        {doc.careerTimeline.map((c: any) => (
+          <div class="tl-item">
+            <div class="tr">{c.period}</div>
+            <div class="ro">{c.role}</div>
+            <div class="ho">{c.place}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="proc-section">
+    <div class="container">
+      <div class="hdr">
+        <div class="eyebrow">Expertise</div>
+        <h2>Areas of Expertise</h2>
+      </div>
+      <div class="expertise-grid">
+        {doc.expertise.map((e: string) => <div class="expertise-item">{e}</div>)}
+      </div>
+    </div>
+  </section>
+
+  {doc.achievements && doc.achievements.length > 0 && (
+    <section>
+      <div class="container">
+        <div class="hdr">
+          <div class="eyebrow">Recognition</div>
+          <h2>Achievements</h2>
+        </div>
+        <div class="ach-grid">
+          {doc.achievements.map((a: any) => (
+            <div class="ach-card">
+              <div class="ach-ico">{a.icon}</div>
+              <div>
+                <h4>{a.title}</h4>
+                <p>{a.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {doc.memberships && doc.memberships.length > 0 && (
+    <section class="why-section">
+      <div class="container">
+        <div class="hdr">
+          <div class="eyebrow">Affiliations</div>
+          <h2>Professional Memberships</h2>
+        </div>
+        <div class="mem-row">
+          {doc.memberships.map((m: string) => <span class="mem-chip">{m}</span>)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="cta-band" style="padding:44px 0;">
+    <div class="container cta-band-inner">
+      <h2>Book a Consultation with {doc.name}</h2>
+      <div class="hero-btns" style="justify-content:center;">
+        <a class="btn-main" href={`tel:${site.phone}`} style="background:#fff;color:var(--teal);box-shadow:none;">📞 Call {site.phoneDisplay}</a>
+        <a class="btn-ghost" href="/contact/">Book Online →</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -15,24 +15,33 @@ const initials = (name: string) => name.replace('Dr. ', '').split(' ').map((w) =
     <div class="glow g1"></div>
     <div class="glow g2"></div>
     <div class="container hero-inner">
-      <div class="hero-pill">{home.hero.pill}</div>
-      <h1>{home.hero.h1a}<br />{home.hero.h1b}</h1>
-      <p class="lead">{home.hero.lead}</p>
-      <div class="hero-badge-row">
-        {home.hero.badges.map((b: string) => <span class="hbadge">✓ {b}</span>)}
-      </div>
-      <div class="hero-btns">
-        <a class="btn-main" href={`tel:${site.phone}`}>📞 Book Appointment</a>
-        <a class="btn-ghost" href={site.whatsappUrl} target="_blank" rel="noopener">💬 WhatsApp Us</a>
-        <a class="btn-ghost" href={site.mapsUrl} target="_blank" rel="noopener">📍 Directions</a>
-      </div>
-      <div class="hero-stat-row">
-        {home.hero.cardStats.map((s: any) => (
-          <div class="hstat">
-            <div class="hn">{s.value}</div>
-            <div class="hl">{s.label}</div>
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">{home.hero.pill}</div>
+          <h1>{home.hero.h1a}<br />{home.hero.h1b}</h1>
+          <p class="lead">{home.hero.lead}</p>
+          <div class="hero-badge-row">
+            {home.hero.badges.map((b: string) => <span class="hbadge">✓ {b}</span>)}
           </div>
-        ))}
+          <div class="hero-btns">
+            <a class="btn-main" href={`tel:${site.phone}`}>📞 Book Appointment</a>
+            <a class="btn-ghost" href={site.whatsappUrl} target="_blank" rel="noopener">💬 WhatsApp Us</a>
+            <a class="btn-ghost" href={site.mapsUrl} target="_blank" rel="noopener">📍 Directions</a>
+          </div>
+          <div class="hero-stat-row">
+            {home.hero.cardStats.map((s: any) => (
+              <div class="hstat">
+                <div class="hn">{s.value}</div>
+                <div class="hl">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hv-frame">
+            <img src="/images/clinic-hero.jpg" alt={`${site.name} clinic entrance, Krishna Nagar Extension`} width="800" height="600" loading="eager" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -52,11 +61,22 @@ const initials = (name: string) => name.replace('Dr. ', '').split(' ').map((w) =
   <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <div class="hdr c">
-        <div class="eyebrow">{home.about.eyebrow}</div>
-        <h2>{home.about.heading}</h2>
+      <div class="about-grid" style="margin-bottom:40px;">
+        <div class="about-visual">
+          <img src="/images/clinic-about.jpg" alt={`${site.name} clinic storefront`} width="800" height="600" loading="lazy" />
+          <div class="about-badge">
+            <div class="ab-n">10+</div>
+            <div class="ab-l">Years of<br />Excellence</div>
+          </div>
+        </div>
+        <div>
+          <div class="hdr" style="margin-bottom:16px;">
+            <div class="eyebrow">{home.about.eyebrow}</div>
+            <h2>{home.about.heading}</h2>
+          </div>
+          <p class="about-text" style="text-align:left;margin:0;max-width:none;">{home.about.text}</p>
+        </div>
       </div>
-      <p class="about-text">{home.about.text}</p>
       <div class="feature-grid">
         {home.about.features.map((f: any) => (
           <div class="feature-card">

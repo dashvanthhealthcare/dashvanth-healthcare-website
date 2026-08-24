@@ -7,9 +7,47 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  jsonLd?: object | object[];
 }
 
-const { title = site.titleTag, description = site.metaDescription } = Astro.props;
+const { title = site.titleTag, description = site.metaDescription, jsonLd } = Astro.props;
+
+const isHomepage = Astro.url.pathname === '/';
+
+const medicalClinicSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalClinic',
+  name: 'Dashvanth Healthcare',
+  url: 'https://www.dashvanthhealthcare.com/',
+  telephone: site.phone,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'A-1, Krishna Nagar Extension, Near Geeta Colony Police Station',
+    addressLocality: 'Delhi',
+    postalCode: '110051',
+    addressCountry: 'IN',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '10:00',
+      closes: '20:00',
+    },
+  ],
+  medicalSpecialty: ['Orthopedic', 'Neurosurgery', 'Gynecologic', 'Pediatric', 'Radiography'],
+  hasMap: site.mapsUrl,
+  employee: [
+    { '@type': 'Physician', name: 'Dr. Shahrukh Khan', medicalSpecialty: 'Orthopedic', url: 'https://www.dashvanthhealthcare.com/doctors/dr-shahrukh-khan/' },
+    { '@type': 'Physician', name: 'Dr. Simranjeet Singh', medicalSpecialty: 'Neurosurgery', url: 'https://www.dashvanthhealthcare.com/doctors/dr-simranjeet-singh/' },
+    { '@type': 'Physician', name: 'Dr. Rupali Raj', medicalSpecialty: 'Gynecologic', url: 'https://www.dashvanthhealthcare.com/doctors/dr-rupali-raj/' },
+  ],
+};
+
+const jsonLdBlocks: object[] = [
+  ...(isHomepage ? [medicalClinicSchema] : []),
+  ...(jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : []),
+];
 ---
 
 <!doctype html>
@@ -23,6 +61,9 @@ const { title = site.titleTag, description = site.metaDescription } = Astro.prop
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%95%EF%B8%8F</text></svg>" />
+    {jsonLdBlocks.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
   </head>
   <body>
     <div class="topbar">

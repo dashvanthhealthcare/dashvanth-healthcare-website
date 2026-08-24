@@ -13,9 +13,19 @@ export async function getStaticPaths() {
 
 const { doc } = Astro.props as { doc: any };
 const initials = doc.name.replace('Dr. ', '').split(' ').map((w: string) => w[0]).join('').slice(0, 2).toUpperCase();
+
+const physicianSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Physician',
+  name: doc.name,
+  url: `https://www.dashvanthhealthcare.com/doctors/${doc.slug}/`,
+  medicalSpecialty: doc.department,
+  description: doc.credentials,
+  worksFor: { '@type': 'MedicalClinic', name: 'Dashvanth Healthcare', url: 'https://www.dashvanthhealthcare.com/' },
+};
 ---
 
-<Layout title={`${doc.name} | ${doc.department} | Dashvanth Healthcare`} description={doc.about[0]}>
+<Layout title={`${doc.name} | ${doc.department} | Dashvanth Healthcare`} description={doc.about[0]} jsonLd={physicianSchema}>
   <section class="doc-hero">
     <div class="container doc-hero-grid">
       <div class="doc-hero-avatar">{initials}</div>

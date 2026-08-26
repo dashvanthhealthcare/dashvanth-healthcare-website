@@ -37,6 +37,12 @@ const medicalClinicSchema = {
   ],
   medicalSpecialty: ['Orthopedic', 'Neurosurgery', 'Gynecologic', 'Pediatric', 'Radiography'],
   hasMap: site.mapsUrl,
+geo: {
+'@type': 'GeoCoordinates',
+latitude: '28.6548335',
+longitude: '77.2767534',
+},
+sameAs: [site.mapsUrl],
   employee: [
     { '@type': 'Physician', name: 'Dr. Shahrukh Khan', medicalSpecialty: 'Orthopedic', url: 'https://www.dashvanthhealthcare.com/doctors/dr-shahrukh-khan/' },
     { '@type': 'Physician', name: 'Dr. Simranjeet Singh', medicalSpecialty: 'Neurosurgery', url: 'https://www.dashvanthhealthcare.com/doctors/dr-simranjeet-singh/' },

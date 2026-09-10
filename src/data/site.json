@@ -22,6 +22,7 @@
     { "label": "Departments", "href": "/departments/" },
     { "label": "Health Blog", "href": "/blog/" },
     { "label": "Doctors", "href": "/doctors/" },
+    { "label": "Ask the Expert", "href": "/ask-the-expert/" },
     { "label": "Contact", "href": "/contact/" }
   ],
   "footer": {

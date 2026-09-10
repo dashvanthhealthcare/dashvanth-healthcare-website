@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import departments from '../data/departments.json';
+import answered from '../data/ask-the-expert.json';
+
+// Only the 5 clinical specialties take public questions (not Diagnostics Lab / Pharmacy)
+const specialtySlugs = ['orthopaedics', 'neurosurgery', 'gynaecology', 'paediatrics', 'imaging'];
+const specialties = specialtySlugs
+  .map((slug) => departments.find((d: any) => d.slug === slug))
+  .filter(Boolean);
+
+function forSpecialty(slug: string) {
+  return (answered as any[])
+    .filter((item) => item.specialization === slug)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+---
+
+<Layout
+  title="Ask the Expert — Free Q&A with Dashvanth Healthcare Specialists"
+  description="Ask our Orthopaedics, Neurosurgery, Gynaecology, Paediatrics or Imaging specialists a question. Selected questions are answered and published weekly by real Dashvanth Healthcare doctors."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Ask the Expert</div>
+      <h1>Have a Medical Question? Ask Our Specialists Directly.</h1>
+      <p class="sub">
+        A free public Q&amp;A from Dashvanth Healthcare — real questions, answered by our Orthopaedics, Neurosurgery &amp; Spine, Gynaecology &amp; Obstetrics, Paediatrics and Imaging &amp; Radiology specialists.
+      </p>
+    </div>
+  </section>
+
+  <section id="ask-hero">
+    <div class="container">
+      <div class="ask-rules">
+        <h3>Before you submit</h3>
+        <ul>
+          <li>Choose the <strong>specialty your question relates to</strong> — Orthopaedics, Neurosurgery &amp; Spine, Gynaecology &amp; Obstetrics, Paediatrics, or Imaging &amp; Radiology.</li>
+          <li>This is <strong>general health education, not a diagnosis or a substitute for an in-person consultation</strong>. For urgent symptoms, call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a> or visit us directly.</li>
+          <li>Our specialists select and answer a batch of questions <strong>every week</strong>. Not all questions submitted can be featured.</li>
+          <li>By submitting a question, <strong>you consent to your question (with your name and city) being published on this page</strong> along with the specialist's answer.</li>
+        </ul>
+      </div>
+
+      <div class="ask-form-wrap">
+        <h3 style="font-size:20px;color:var(--navy2);margin-bottom:16px;">📝 Submit Your Question</h3>
+        <form name="ask-the-expert" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="ask-form">
+          <input type="hidden" name="form-name" value="ask-the-expert" />
+          <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <div class="form-row">
+            <div class="fg">
+              <label for="askName">Your Name *</label>
+              <input id="askName" name="name" type="text" required />
+            </div>
+            <div class="fg">
+              <label for="askCity">City / Location *</label>
+              <input id="askCity" name="city" type="text" required />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="askSpecialization">Which specialist is this for? *</label>
+            <select id="askSpecialization" name="specialization" required>
+              <option value="">— Select a specialty —</option>
+              {specialties.map((s: any) => <option value={s.slug}>{s.name}</option>)}
+            </select>
+          </div>
+          <div class="fg">
+            <label for="askQuestion">Your Question (max 250 words) *</label>
+            <textarea id="askQuestion" name="question" required maxlength="1900" rows="6"></textarea>
+            <div class="word-count"><span id="wordCountVal">0</span> / 250 words</div>
+          </div>
+          <div class="fg consent-fg">
+            <label class="consent-label">
+              <input type="checkbox" name="consent" required />
+              <span>I understand my question may be answered and published on this page along with my name and city.</span>
+            </label>
+          </div>
+          <button class="btn-sub" type="submit">Submit Question →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  {specialties.map((spec: any) => {
+    const items = forSpecialty(spec.slug);
+    return (
+      <section class="faq-sec ask-expert-sec">
+        <div class="container">
+          <div class="hdr">
+            <div class="dept-ico" style="margin-bottom:12px;">{spec.icon}</div>
+            <div class="eyebrow">Answered This Week</div>
+            <h2>{spec.name} — Ask the Expert</h2>
+          </div>
+          {items.length === 0 ? (
+            <p class="blog-empty">No questions answered yet for {spec.shortName} — check back soon, or be the first to ask above.</p>
+          ) : (
+            <div class="ask-qa-list">
+              {items.map((item: any) => (
+                <div class="ask-qa-card">
+                  <div class="ask-q">
+                    <span class="ask-q-badge">Q</span>
+                    <div>
+                      <p>{item.question}</p>
+                      <div class="ask-meta">— {item.name}, {item.city} · {new Date(item.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+                    </div>
+                  </div>
+                  <div class="ask-a">
+                    <span class="ask-a-badge">A</span>
+                    <div>
+                      <p>{item.answer}</p>
+                      <div class="ask-meta ask-doc-meta">— Dr. {item.doctorName}, {item.doctorDesignation} ({item.doctorDegrees}) · Dashvanth Healthcare</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  })}
+
+  <script>
+    const textarea = document.getElementById('askQuestion') as HTMLTextAreaElement | null;
+    const counter = document.getElementById('wordCountVal');
+    if (textarea && counter) {
+      const update = () => {
+        const words = textarea.value.trim().split(/\s+/).filter(Boolean);
+        counter.textContent = String(words.length);
+        counter.parentElement?.classList.toggle('over-limit', words.length > 250);
+      };
+      textarea.addEventListener('input', update);
+      update();
+    }
+  </script>
+</Layout>

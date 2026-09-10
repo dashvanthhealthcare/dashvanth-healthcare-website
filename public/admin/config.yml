@@ -9,6 +9,36 @@ media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "ask-the-expert"
+    label: "Ask the Expert (Answered)"
+    files:
+      - file: "src/data/ask-the-expert.json"
+        label: "Answered Questions"
+        name: "ask-the-expert"
+        fields:
+          - label: "Answered Questions"
+            name: "ask-the-expert"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.city}}) — {{fields.specialization}} — {{fields.date}}"
+            fields:
+              - { label: "Asker Name", name: "name", widget: "string" }
+              - { label: "City / Location", name: "city", widget: "string" }
+              - label: "Specialty"
+                name: "specialization"
+                widget: "select"
+                options:
+                  - { label: "Orthopaedics & Joint Replacement", value: "orthopaedics" }
+                  - { label: "Neurosurgery & Spine", value: "neurosurgery" }
+                  - { label: "Gynaecology & Obstetrics", value: "gynaecology" }
+                  - { label: "Paediatrics & Child Health", value: "paediatrics" }
+                  - { label: "Imaging & Radiology", value: "imaging" }
+              - { label: "Question", name: "question", widget: "text" }
+              - { label: "Answer", name: "answer", widget: "text" }
+              - { label: "Replying Doctor Name (without 'Dr.')", name: "doctorName", widget: "string" }
+              - { label: "Doctor Designation", name: "doctorDesignation", widget: "string", hint: "e.g. Consultant Orthopaedic Surgeon" }
+              - { label: "Doctor Degrees", name: "doctorDegrees", widget: "string", hint: "e.g. MBBS, MS Orthopaedics" }
+              - { label: "Date Answered", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+
   - name: "settings"
     label: "Site Settings"
     editor:
